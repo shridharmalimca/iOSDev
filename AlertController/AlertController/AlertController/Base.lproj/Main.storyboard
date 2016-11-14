@@ -25,16 +25,25 @@
                                 <rect key="frame" x="99" y="47" width="178" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Simple Alert"/>
+                                <connections>
+                                    <action selector="simpleAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wf2-LQ-o8o"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssz-WS-KdR">
                                 <rect key="frame" x="99" y="91" width="178" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Alert With Title"/>
+                                <connections>
+                                    <action selector="alertWithTitle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wc8-RC-wRp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOc-Vv-Rr8">
                                 <rect key="frame" x="99" y="137" width="178" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Alert with two buttons"/>
+                                <connections>
+                                    <action selector="alertWithTwoButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="siW-dc-b7z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
