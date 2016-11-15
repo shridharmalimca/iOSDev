@@ -34,3 +34,5 @@ After click on "Connect"  Button you will get @IBOutlet connection code in ViewC
 
 ![Hide Assistant Editor] (https://github.com/shridharmalimca/Shridhar.github.io/blob/master/iOS/Swift%203.0/AlertController/Step%207-3.png)
 
+8) Add code in btnAlertClicked function for show UIAlertController 
+![Show Alert Controller] ()
