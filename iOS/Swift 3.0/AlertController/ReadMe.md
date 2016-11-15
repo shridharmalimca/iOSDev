@@ -39,4 +39,5 @@ After click on "Connect"  Button you will get @IBOutlet connection code in ViewC
 
 9) Output
 
-![Output] ()
+![Output] (https://github.com/shridharmalimca/Shridhar.github.io/blob/master/iOS/Swift%203.0/AlertController/Step%209.png)
+
