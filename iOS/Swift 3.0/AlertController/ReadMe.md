@@ -19,5 +19,5 @@
 ![UIButton] (https://github.com/shridharmalimca/Shridhar.github.io/blob/master/iOS/Swift%203.0/AlertController/Step%205.png) 
 
 6) Connect UIButton outlet and action to ViewController, Select Assistant Editor for connection in ViewController xib and ViewController code. Follow sequence show in below screenshot.
-![Connection UIButton] ()
+![Connection UIButton] (https://github.com/shridharmalimca/Shridhar.github.io/blob/master/iOS/Swift%203.0/AlertController/Step%206.png)
 
