@@ -14,3 +14,6 @@
 
 4) Select Main.storyboard, you will get one screen (View)
 ![View] (https://github.com/shridharmalimca/Shridhar.github.io/blob/master/iOS/Swift%203.0/AlertController/Step%204.png)
+
+5) Search UIButton and drag on View and name to Simple Alert.
+![UIButton] () 
