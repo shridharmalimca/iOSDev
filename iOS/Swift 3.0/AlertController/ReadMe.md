@@ -11,3 +11,6 @@
 
 3) You will get folder structure like below screenshot.
 ![Folder Structure] (https://github.com/shridharmalimca/Shridhar.github.io/blob/master/iOS/Swift%203.0/AlertController/Step%203.png) 
+
+4) Select Main.storyboard, you will get one screen (View)
+![View] ()
