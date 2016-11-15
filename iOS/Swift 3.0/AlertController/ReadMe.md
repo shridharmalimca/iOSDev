@@ -29,3 +29,5 @@ After click on "Connect"  Button you will get @IBOutlet connection code in ViewC
 ![IBAction connection] (https://github.com/shridharmalimca/Shridhar.github.io/blob/master/iOS/Swift%203.0/AlertController/Step%207.png)
 
 ![@IBAction Connection] (https://github.com/shridharmalimca/Shridhar.github.io/blob/master/iOS/Swift%203.0/AlertController/Step%207-1.png)
+
+![btnAlertClicked function listed] ()
