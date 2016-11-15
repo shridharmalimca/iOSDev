@@ -299,6 +299,7 @@
 				20E2A1631DD9C2D700E5B778 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
