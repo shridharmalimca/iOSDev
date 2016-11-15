@@ -28,3 +28,4 @@ After click on "Connect"  Button you will get @IBOutlet connection code in ViewC
 7) Once done with outlet connection you have to connect action for event in ViewController code.
 ![IBAction connection] (https://github.com/shridharmalimca/Shridhar.github.io/blob/master/iOS/Swift%203.0/AlertController/Step%207.png)
 
+![@IBAction Connection] ()
