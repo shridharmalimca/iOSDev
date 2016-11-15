@@ -10,4 +10,4 @@
 ![Select Single View Application] (https://github.com/shridharmalimca/Shridhar.github.io/blob/master/iOS/Swift%203.0/AlertController/Step%202.png)
 
 3) You will get folder structure like below screenshot.
-![Folder Structure] () 
+![Folder Structure] (https://github.com/shridharmalimca/Shridhar.github.io/blob/master/iOS/Swift%203.0/AlertController/Step%203.png) 
