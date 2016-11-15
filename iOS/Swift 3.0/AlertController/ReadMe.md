@@ -30,4 +30,7 @@ After click on "Connect"  Button you will get @IBOutlet connection code in ViewC
 
 ![@IBAction Connection] (https://github.com/shridharmalimca/Shridhar.github.io/blob/master/iOS/Swift%203.0/AlertController/Step%207-1.png)
 
-![btnAlertClicked function listed] ()
+![btnAlertClicked function listed] (https://github.com/shridharmalimca/Shridhar.github.io/blob/master/iOS/Swift%203.0/AlertController/Step%207-2.png)
+
+![Hide Assistant Editor] (https://github.com/shridharmalimca/Shridhar.github.io/blob/master/iOS/Swift%203.0/AlertController/Step%207-3.png)
+
