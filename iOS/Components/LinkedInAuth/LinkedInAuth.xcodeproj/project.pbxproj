@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20E4BBB21DAE54330060E80D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E4BBB11DAE54330060E80D /* AppDelegate.swift */; };
+		20E4BBB41DAE54330060E80D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E4BBB31DAE54330060E80D /* ViewController.swift */; };
+		20E4BBB71DAE54330060E80D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20E4BBB51DAE54330060E80D /* Main.storyboard */; };
+		20E4BBB91DAE54330060E80D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E4BBB81DAE54330060E80D /* Assets.xcassets */; };
+		20E4BBBC1DAE54330060E80D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20E4BBBA1DAE54330060E80D /* LaunchScreen.storyboard */; };
+		20E4BBC71DAE54330060E80D /* LinkedInAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E4BBC61DAE54330060E80D /* LinkedInAuthTests.swift */; };
+		20E4BBD21DAE54330060E80D /* LinkedInAuthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E4BBD11DAE54330060E80D /* LinkedInAuthUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20E4BBC31DAE54330060E80D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20E4BBA61DAE54330060E80D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20E4BBAD1DAE54330060E80D;
+			remoteInfo = LinkedInAuth;
+		};
+		20E4BBCE1DAE54330060E80D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20E4BBA61DAE54330060E80D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20E4BBAD1DAE54330060E80D;
+			remoteInfo = LinkedInAuth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20E4BBAE1DAE54330060E80D /* LinkedInAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedInAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E4BBB11DAE54330060E80D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20E4BBB31DAE54330060E80D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20E4BBB61DAE54330060E80D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20E4BBB81DAE54330060E80D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20E4BBBB1DAE54330060E80D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20E4BBBD1DAE54330060E80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20E4BBC21DAE54330060E80D /* LinkedInAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedInAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E4BBC61DAE54330060E80D /* LinkedInAuthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInAuthTests.swift; sourceTree = "<group>"; };
+		20E4BBC81DAE54330060E80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20E4BBCD1DAE54330060E80D /* LinkedInAuthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedInAuthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E4BBD11DAE54330060E80D /* LinkedInAuthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInAuthUITests.swift; sourceTree = "<group>"; };
+		20E4BBD31DAE54330060E80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20E4BBAB1DAE54330060E80D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E4BBBF1DAE54330060E80D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E4BBCA1DAE54330060E80D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20E4BBA51DAE54330060E80D = {
+			isa = PBXGroup;
+			children = (
+				20E4BBB01DAE54330060E80D /* LinkedInAuth */,
+				20E4BBC51DAE54330060E80D /* LinkedInAuthTests */,
+				20E4BBD01DAE54330060E80D /* LinkedInAuthUITests */,
+				20E4BBAF1DAE54330060E80D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20E4BBAF1DAE54330060E80D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20E4BBAE1DAE54330060E80D /* LinkedInAuth.app */,
+				20E4BBC21DAE54330060E80D /* LinkedInAuthTests.xctest */,
+				20E4BBCD1DAE54330060E80D /* LinkedInAuthUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20E4BBB01DAE54330060E80D /* LinkedInAuth */ = {
+			isa = PBXGroup;
+			children = (
+				20E4BBB11DAE54330060E80D /* AppDelegate.swift */,
+				20E4BBB31DAE54330060E80D /* ViewController.swift */,
+				20E4BBB51DAE54330060E80D /* Main.storyboard */,
+				20E4BBB81DAE54330060E80D /* Assets.xcassets */,
+				20E4BBBA1DAE54330060E80D /* LaunchScreen.storyboard */,
+				20E4BBBD1DAE54330060E80D /* Info.plist */,
+			);
+			path = LinkedInAuth;
+			sourceTree = "<group>";
+		};
+		20E4BBC51DAE54330060E80D /* LinkedInAuthTests */ = {
+			isa = PBXGroup;
+			children = (
+				20E4BBC61DAE54330060E80D /* LinkedInAuthTests.swift */,
+				20E4BBC81DAE54330060E80D /* Info.plist */,
+			);
+			path = LinkedInAuthTests;
+			sourceTree = "<group>";
+		};
+		20E4BBD01DAE54330060E80D /* LinkedInAuthUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20E4BBD11DAE54330060E80D /* LinkedInAuthUITests.swift */,
+				20E4BBD31DAE54330060E80D /* Info.plist */,
+			);
+			path = LinkedInAuthUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20E4BBAD1DAE54330060E80D /* LinkedInAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20E4BBD61DAE54330060E80D /* Build configuration list for PBXNativeTarget "LinkedInAuth" */;
+			buildPhases = (
+				20E4BBAA1DAE54330060E80D /* Sources */,
+				20E4BBAB1DAE54330060E80D /* Frameworks */,
+				20E4BBAC1DAE54330060E80D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinkedInAuth;
+			productName = LinkedInAuth;
+			productReference = 20E4BBAE1DAE54330060E80D /* LinkedInAuth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20E4BBC11DAE54330060E80D /* LinkedInAuthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20E4BBD91DAE54330060E80D /* Build configuration list for PBXNativeTarget "LinkedInAuthTests" */;
+			buildPhases = (
+				20E4BBBE1DAE54330060E80D /* Sources */,
+				20E4BBBF1DAE54330060E80D /* Frameworks */,
+				20E4BBC01DAE54330060E80D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20E4BBC41DAE54330060E80D /* PBXTargetDependency */,
+			);
+			name = LinkedInAuthTests;
+			productName = LinkedInAuthTests;
+			productReference = 20E4BBC21DAE54330060E80D /* LinkedInAuthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		20E4BBCC1DAE54330060E80D /* LinkedInAuthUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20E4BBDC1DAE54330060E80D /* Build configuration list for PBXNativeTarget "LinkedInAuthUITests" */;
+			buildPhases = (
+				20E4BBC91DAE54330060E80D /* Sources */,
+				20E4BBCA1DAE54330060E80D /* Frameworks */,
+				20E4BBCB1DAE54330060E80D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20E4BBCF1DAE54330060E80D /* PBXTargetDependency */,
+			);
+			name = LinkedInAuthUITests;
+			productName = LinkedInAuthUITests;
+			productReference = 20E4BBCD1DAE54330060E80D /* LinkedInAuthUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20E4BBA61DAE54330060E80D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Altimetrik;
+				TargetAttributes = {
+					20E4BBAD1DAE54330060E80D = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+					};
+					20E4BBC11DAE54330060E80D = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 27KRJ3F74B;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 20E4BBAD1DAE54330060E80D;
+					};
+					20E4BBCC1DAE54330060E80D = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 27KRJ3F74B;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 20E4BBAD1DAE54330060E80D;
+					};
+				};
+			};
+			buildConfigurationList = 20E4BBA91DAE54330060E80D /* Build configuration list for PBXProject "LinkedInAuth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20E4BBA51DAE54330060E80D;
+			productRefGroup = 20E4BBAF1DAE54330060E80D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20E4BBAD1DAE54330060E80D /* LinkedInAuth */,
+				20E4BBC11DAE54330060E80D /* LinkedInAuthTests */,
+				20E4BBCC1DAE54330060E80D /* LinkedInAuthUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20E4BBAC1DAE54330060E80D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E4BBBC1DAE54330060E80D /* LaunchScreen.storyboard in Resources */,
+				20E4BBB91DAE54330060E80D /* Assets.xcassets in Resources */,
+				20E4BBB71DAE54330060E80D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E4BBC01DAE54330060E80D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E4BBCB1DAE54330060E80D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20E4BBAA1DAE54330060E80D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E4BBB41DAE54330060E80D /* ViewController.swift in Sources */,
+				20E4BBB21DAE54330060E80D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E4BBBE1DAE54330060E80D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E4BBC71DAE54330060E80D /* LinkedInAuthTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E4BBC91DAE54330060E80D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E4BBD21DAE54330060E80D /* LinkedInAuthUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20E4BBC41DAE54330060E80D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20E4BBAD1DAE54330060E80D /* LinkedInAuth */;
+			targetProxy = 20E4BBC31DAE54330060E80D /* PBXContainerItemProxy */;
+		};
+		20E4BBCF1DAE54330060E80D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20E4BBAD1DAE54330060E80D /* LinkedInAuth */;
+			targetProxy = 20E4BBCE1DAE54330060E80D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20E4BBB51DAE54330060E80D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20E4BBB61DAE54330060E80D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20E4BBBA1DAE54330060E80D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20E4BBBB1DAE54330060E80D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20E4BBD41DAE54330060E80D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20E4BBD51DAE54330060E80D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20E4BBD71DAE54330060E80D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LinkedInAuth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.altimetrik.LinkedInAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		20E4BBD81DAE54330060E80D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LinkedInAuth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.altimetrik.LinkedInAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		20E4BBDA1DAE54330060E80D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 27KRJ3F74B;
+				INFOPLIST_FILE = LinkedInAuthTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.altimetrik.LinkedInAuthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinkedInAuth.app/LinkedInAuth";
+			};
+			name = Debug;
+		};
+		20E4BBDB1DAE54330060E80D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 27KRJ3F74B;
+				INFOPLIST_FILE = LinkedInAuthTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.altimetrik.LinkedInAuthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinkedInAuth.app/LinkedInAuth";
+			};
+			name = Release;
+		};
+		20E4BBDD1DAE54330060E80D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 27KRJ3F74B;
+				INFOPLIST_FILE = LinkedInAuthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.altimetrik.LinkedInAuthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LinkedInAuth;
+			};
+			name = Debug;
+		};
+		20E4BBDE1DAE54330060E80D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 27KRJ3F74B;
+				INFOPLIST_FILE = LinkedInAuthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.altimetrik.LinkedInAuthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LinkedInAuth;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20E4BBA91DAE54330060E80D /* Build configuration list for PBXProject "LinkedInAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20E4BBD41DAE54330060E80D /* Debug */,
+				20E4BBD51DAE54330060E80D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20E4BBD61DAE54330060E80D /* Build configuration list for PBXNativeTarget "LinkedInAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20E4BBD71DAE54330060E80D /* Debug */,
+				20E4BBD81DAE54330060E80D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20E4BBD91DAE54330060E80D /* Build configuration list for PBXNativeTarget "LinkedInAuthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20E4BBDA1DAE54330060E80D /* Debug */,
+				20E4BBDB1DAE54330060E80D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20E4BBDC1DAE54330060E80D /* Build configuration list for PBXNativeTarget "LinkedInAuthUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20E4BBDD1DAE54330060E80D /* Debug */,
+				20E4BBDE1DAE54330060E80D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20E4BBA61DAE54330060E80D /* Project object */;
+}
