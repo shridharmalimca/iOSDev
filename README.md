@@ -8,4 +8,4 @@
 * [UICollectionView] (https://github.com/shridharmalimca/Shridhar.github.io/tree/master/iOS/Swift%203.0/CollectionView) 
 * [UIWebView] (https://github.com/shridharmalimca/Shridhar.github.io/tree/master/iOS/Swift%203.0/WebView)
 * [MapView] ()
-* [SearchController] (https://github.com/shridharmalimca/Shridhar.github.io/tree/master/iOS/Swift%203.0/SearchBar)
+* [UISearchController] (https://github.com/shridharmalimca/Shridhar.github.io/tree/master/iOS/Swift%203.0/SearchBar)
