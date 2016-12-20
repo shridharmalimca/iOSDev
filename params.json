@@ -1,6 +1,0 @@
-{
-  "name": "iOSDevelopment",
-  "tagline": "",
-  "body": "## iOS Swift 3.0\r\n* [Alert Controller](https://github.com/shridharmalimca/Shridhar.github.io/tree/master/iOS/Swift%203.0/AlertController)\r\n* [Action Sheet] ()\r\n* [UITextField] ()\r\n* [UITextView] (https://github.com/shridharmalimca/Shridhar.github.io/tree/master/iOS/Swift%203.0/TextView)\r\n* [UIActivityIndicatorView] (https://github.com/shridharmalimca/Shridhar.github.io/tree/master/iOS/Swift%203.0/ActivityIndicatorView)\r\n* [UIToolBar] (https://github.com/shridharmalimca/Shridhar.github.io/tree/master/iOS/Swift%203.0/ToolBarDemo) \r\n* [UICollectionView] (https://github.com/shridharmalimca/Shridhar.github.io/tree/master/iOS/Swift%203.0/CollectionView) \r\n* [UIWebView] (https://github.com/shridharmalimca/Shridhar.github.io/tree/master/iOS/Swift%203.0/WebView)\r\n* [MapView] ()\r\n* [UISearchController] (https://github.com/shridharmalimca/Shridhar.github.io/tree/master/iOS/Swift%203.0/SearchBar)\r\n* [UIRefreshControl] (https://github.com/shridharmalimca/iOSDev/tree/master/iOS/Swift%203.0/RefreshControl)",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
