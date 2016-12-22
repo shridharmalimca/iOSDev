@@ -63,7 +63,7 @@ class ViewController: UIViewController {
     //MARK: Rotation
     func handleRotation(recognizer: UIRotationGestureRecognizer) {
         print("Rotation")
-        recognizer.view?.transform = (recognizer.view?.transform.rotated(by: 360))!
+        recognizer.view?.transform = (recognizer.view?.transform.rotated(by: 10))!
     }
 
     func handlePan(recognizer: UIPanGestureRecognizer) {
