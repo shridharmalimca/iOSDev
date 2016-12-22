@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     var imageArray = ["a.png", "b.png", "c.png", "f.jpg", "e.jpg"]
     var draggableView = UIView()
     var indexOfDeletingCell: Int = -1
+    let animation = CABasicAnimation(keyPath: "position")
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -26,6 +27,7 @@ class ViewController: UIViewController {
 
     func deleteCell(sender: UILongPressGestureRecognizer) {
         print(sender.state)
+        
         if sender.state == UIGestureRecognizerState.began {
             print("Long Press")
             let cell = sender.view?.superview?.superview as! ImageCell
@@ -42,6 +44,9 @@ class ViewController: UIViewController {
             imgView.image = UIImage(named: imageArray[indexPath.row])
             draggableView.addSubview(imgView)
             UIApplication.shared.keyWindow?.addSubview(draggableView)
+           
+            sender.view?.layer.add(startShakingAnimation(sender: sender), forKey: "position")
+            
             
         } else if sender.state == UIGestureRecognizerState.ended {
             draggableView.removeFromSuperview()
@@ -49,6 +54,7 @@ class ViewController: UIViewController {
             self.navigationItem.rightBarButtonItem = nil
             let cell = sender.view?.superview?.superview as! ImageCell
             cell.alpha = 1
+            sender.view?.layer.removeAllAnimations()
         } else if sender.state == UIGestureRecognizerState.changed {
             let touchLocation = sender.location(in: self.collectionView)
             draggableView.frame.origin.x = touchLocation.x
@@ -62,11 +68,23 @@ class ViewController: UIViewController {
                         draggableView.removeFromSuperview()
                         indexOfDeletingCell = -1
                         self.collectionView.reloadData()
+                        sender.view?.layer.removeAllAnimations()
                         return
                     }
                 }
             }
         }
+    }
+    
+    func startShakingAnimation(sender: UILongPressGestureRecognizer) -> CABasicAnimation{
+        // Shaking animation
+        animation.duration = 0.9
+        animation.repeatCount = 1000
+        animation.autoreverses = true
+        animation.speed = 10
+        animation.fromValue = NSValue(cgPoint: CGPoint(x: (sender.view?.center.x)! - 0.9, y: (sender.view?.center.y)! + 0.9))
+        animation.toValue = NSValue(cgPoint: CGPoint(x: (sender.view?.center.x)! + 0.9, y: (sender.view?.center.y)! - 0.9))
+        return animation
     }
     
     func deleteCellData() {
