@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Localization
+
+  Created by Shridhar Mali on 12/26/16.
+  Copyright © 2016 TIS. All rights reserved.
+*/
+
+Hello = "ABCD";
+OK = "YES";
