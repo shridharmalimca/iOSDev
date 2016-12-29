@@ -16,6 +16,7 @@
 		20FF03B21E11393F00A6AA70 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FF03B11E11393F00A6AA70 /* ProductCell.swift */; };
 		20FF03B81E113E7400A6AA70 /* SelectedProductDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FF03B71E113E7400A6AA70 /* SelectedProductDataModel.swift */; };
 		20FF03BA1E1141C600A6AA70 /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FF03B91E1141C600A6AA70 /* ProductDetailVC.swift */; };
+		20FF04D91E13EF5300A6AA70 /* Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FF04D81E13EF5300A6AA70 /* Addition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		20FF03B11E11393F00A6AA70 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		20FF03B71E113E7400A6AA70 /* SelectedProductDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedProductDataModel.swift; sourceTree = "<group>"; };
 		20FF03B91E1141C600A6AA70 /* ProductDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailVC.swift; sourceTree = "<group>"; };
+		20FF04D81E13EF5300A6AA70 /* Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Addition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				20FF03B91E1141C600A6AA70 /* ProductDetailVC.swift */,
 				20FF03B71E113E7400A6AA70 /* SelectedProductDataModel.swift */,
 				20FF03B11E11393F00A6AA70 /* ProductCell.swift */,
+				20FF04D81E13EF5300A6AA70 /* Addition.swift */,
 				20FF039C1E11078E00A6AA70 /* Main.storyboard */,
 				20FF03A21E11078E00A6AA70 /* Assets.xcassets */,
 				20FF03A41E11078E00A6AA70 /* LaunchScreen.storyboard */,
@@ -108,7 +111,8 @@
 				TargetAttributes = {
 					20FF03941E11078E00A6AA70 = {
 						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -151,6 +155,7 @@
 				20FF03B81E113E7400A6AA70 /* SelectedProductDataModel.swift in Sources */,
 				20FF03BA1E1141C600A6AA70 /* ProductDetailVC.swift in Sources */,
 				20FF039B1E11078E00A6AA70 /* ViewController.swift in Sources */,
+				20FF04D91E13EF5300A6AA70 /* Addition.swift in Sources */,
 				20FF03B21E11393F00A6AA70 /* ProductCell.swift in Sources */,
 				20FF03A11E11078E00A6AA70 /* ShoppingCart.xcdatamodeld in Sources */,
 				20FF03991E11078E00A6AA70 /* AppDelegate.swift in Sources */,
@@ -276,6 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ShoppingCart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TIS.ShoppingCart;
@@ -288,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ShoppingCart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TIS.ShoppingCart;
