@@ -13,6 +13,7 @@
 		20510D191DFA9C52008D3009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20510D181DFA9C52008D3009 /* Assets.xcassets */; };
 		20510D1C1DFA9C52008D3009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20510D1A1DFA9C52008D3009 /* LaunchScreen.storyboard */; };
 		20510D251DFA9CCC008D3009 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20510D241DFA9CCC008D3009 /* MapKit.framework */; };
+		20BA532D1E24BD7100331AA9 /* LocationManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA532C1E24BD7100331AA9 /* LocationManagerHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		20510D1B1DFA9C52008D3009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20510D1D1DFA9C52008D3009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20510D241DFA9CCC008D3009 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		20BA532C1E24BD7100331AA9 /* LocationManagerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManagerHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				20510D181DFA9C52008D3009 /* Assets.xcassets */,
 				20510D1A1DFA9C52008D3009 /* LaunchScreen.storyboard */,
 				20510D1D1DFA9C52008D3009 /* Info.plist */,
+				20BA532C1E24BD7100331AA9 /* LocationManagerHelper.swift */,
 			);
 			path = MapView;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			files = (
 				20510D141DFA9C52008D3009 /* ViewController.swift in Sources */,
 				20510D121DFA9C52008D3009 /* AppDelegate.swift in Sources */,
+				20BA532D1E24BD7100331AA9 /* LocationManagerHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
