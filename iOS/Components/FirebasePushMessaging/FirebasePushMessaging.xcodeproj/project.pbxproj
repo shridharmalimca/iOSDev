@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		200F030B1E2797B60073099B /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200F030A1E2797B60073099B /* NotificationService.swift */; };
+		200F030F1E2797B60073099B /* FCMNotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 200F03081E2797B60073099B /* FCMNotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		20BA533B1E26149200331AA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA533A1E26149200331AA9 /* AppDelegate.swift */; };
+		20BA533D1E26149200331AA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA533C1E26149200331AA9 /* ViewController.swift */; };
+		20BA53401E26149200331AA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BA533E1E26149200331AA9 /* Main.storyboard */; };
+		20BA53421E26149200331AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BA53411E26149200331AA9 /* Assets.xcassets */; };
+		20BA53451E26149200331AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BA53431E26149200331AA9 /* LaunchScreen.storyboard */; };
+		20BA534D1E2615AC00331AA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20BA534C1E2615AC00331AA9 /* GoogleService-Info.plist */; };
+		20BA53501E26171100331AA9 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BA534E1E26171100331AA9 /* UserNotifications.framework */; };
+		20BA53511E26171100331AA9 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BA534F1E26171100331AA9 /* UserNotificationsUI.framework */; };
+		20BA53581E262B8A00331AA9 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BA534E1E26171100331AA9 /* UserNotifications.framework */; };
+		20BA53591E262B8A00331AA9 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BA534F1E26171100331AA9 /* UserNotificationsUI.framework */; };
+		20BA535C1E262B8A00331AA9 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA535B1E262B8A00331AA9 /* NotificationViewController.swift */; };
+		20BA535F1E262B8A00331AA9 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BA535D1E262B8A00331AA9 /* MainInterface.storyboard */; };
+		20BA53631E262B8A00331AA9 /* FCMPushNotification.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 20BA53571E262B8A00331AA9 /* FCMPushNotification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		499B1FE83208EEEB4FCAFB31 /* Pods_FirebasePushMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B75090582C36FDFB80B420 /* Pods_FirebasePushMessaging.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		200F030D1E2797B60073099B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20BA532F1E26149200331AA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 200F03071E2797B60073099B;
+			remoteInfo = FCMNotificationService;
+		};
+		20BA53611E262B8A00331AA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20BA532F1E26149200331AA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20BA53561E262B8A00331AA9;
+			remoteInfo = FCMPushNotification;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20BA53671E262B8A00331AA9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				200F030F1E2797B60073099B /* FCMNotificationService.appex in Embed App Extensions */,
+				20BA53631E262B8A00331AA9 /* FCMPushNotification.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		200F03081E2797B60073099B /* FCMNotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FCMNotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		200F030A1E2797B60073099B /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		200F030C1E2797B60073099B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20BA53371E26149200331AA9 /* FirebasePushMessaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebasePushMessaging.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20BA533A1E26149200331AA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20BA533C1E26149200331AA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20BA533F1E26149200331AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20BA53411E26149200331AA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20BA53441E26149200331AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20BA53461E26149200331AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20BA534C1E2615AC00331AA9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		20BA534E1E26171100331AA9 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		20BA534F1E26171100331AA9 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		20BA53521E261AAF00331AA9 /* FirebasePushMessaging.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebasePushMessaging.entitlements; sourceTree = "<group>"; };
+		20BA53571E262B8A00331AA9 /* FCMPushNotification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FCMPushNotification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		20BA535B1E262B8A00331AA9 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		20BA535E1E262B8A00331AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		20BA53601E262B8A00331AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A88D6C1FBE5839E3E144BD2 /* Pods-FirebasePushMessaging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebasePushMessaging.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebasePushMessaging/Pods-FirebasePushMessaging.release.xcconfig"; sourceTree = "<group>"; };
+		9CE8850E3713443B33DD6590 /* Pods-FirebasePushMessaging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebasePushMessaging.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebasePushMessaging/Pods-FirebasePushMessaging.debug.xcconfig"; sourceTree = "<group>"; };
+		D0B75090582C36FDFB80B420 /* Pods_FirebasePushMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebasePushMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		200F03051E2797B60073099B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20BA53341E26149200331AA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20BA53501E26171100331AA9 /* UserNotifications.framework in Frameworks */,
+				20BA53511E26171100331AA9 /* UserNotificationsUI.framework in Frameworks */,
+				499B1FE83208EEEB4FCAFB31 /* Pods_FirebasePushMessaging.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20BA53541E262B8A00331AA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20BA53591E262B8A00331AA9 /* UserNotificationsUI.framework in Frameworks */,
+				20BA53581E262B8A00331AA9 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		200F03091E2797B60073099B /* FCMNotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				200F030A1E2797B60073099B /* NotificationService.swift */,
+				200F030C1E2797B60073099B /* Info.plist */,
+			);
+			path = FCMNotificationService;
+			sourceTree = "<group>";
+		};
+		20BA532E1E26149200331AA9 = {
+			isa = PBXGroup;
+			children = (
+				20BA53391E26149200331AA9 /* FirebasePushMessaging */,
+				20BA535A1E262B8A00331AA9 /* FCMPushNotification */,
+				200F03091E2797B60073099B /* FCMNotificationService */,
+				20BA53381E26149200331AA9 /* Products */,
+				A57A3027A56AA2B714C69323 /* Pods */,
+				7B50C21BA58B61E2C6FA2FDE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		20BA53381E26149200331AA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20BA53371E26149200331AA9 /* FirebasePushMessaging.app */,
+				20BA53571E262B8A00331AA9 /* FCMPushNotification.appex */,
+				200F03081E2797B60073099B /* FCMNotificationService.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20BA53391E26149200331AA9 /* FirebasePushMessaging */ = {
+			isa = PBXGroup;
+			children = (
+				20BA53521E261AAF00331AA9 /* FirebasePushMessaging.entitlements */,
+				20BA533A1E26149200331AA9 /* AppDelegate.swift */,
+				20BA533C1E26149200331AA9 /* ViewController.swift */,
+				20BA533E1E26149200331AA9 /* Main.storyboard */,
+				20BA534C1E2615AC00331AA9 /* GoogleService-Info.plist */,
+				20BA53411E26149200331AA9 /* Assets.xcassets */,
+				20BA53431E26149200331AA9 /* LaunchScreen.storyboard */,
+				20BA53461E26149200331AA9 /* Info.plist */,
+			);
+			path = FirebasePushMessaging;
+			sourceTree = "<group>";
+		};
+		20BA535A1E262B8A00331AA9 /* FCMPushNotification */ = {
+			isa = PBXGroup;
+			children = (
+				20BA535B1E262B8A00331AA9 /* NotificationViewController.swift */,
+				20BA535D1E262B8A00331AA9 /* MainInterface.storyboard */,
+				20BA53601E262B8A00331AA9 /* Info.plist */,
+			);
+			path = FCMPushNotification;
+			sourceTree = "<group>";
+		};
+		7B50C21BA58B61E2C6FA2FDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20BA534E1E26171100331AA9 /* UserNotifications.framework */,
+				20BA534F1E26171100331AA9 /* UserNotificationsUI.framework */,
+				D0B75090582C36FDFB80B420 /* Pods_FirebasePushMessaging.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A57A3027A56AA2B714C69323 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CE8850E3713443B33DD6590 /* Pods-FirebasePushMessaging.debug.xcconfig */,
+				2A88D6C1FBE5839E3E144BD2 /* Pods-FirebasePushMessaging.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		200F03071E2797B60073099B /* FCMNotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 200F03121E2797B60073099B /* Build configuration list for PBXNativeTarget "FCMNotificationService" */;
+			buildPhases = (
+				200F03041E2797B60073099B /* Sources */,
+				200F03051E2797B60073099B /* Frameworks */,
+				200F03061E2797B60073099B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FCMNotificationService;
+			productName = FCMNotificationService;
+			productReference = 200F03081E2797B60073099B /* FCMNotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		20BA53361E26149200331AA9 /* FirebasePushMessaging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20BA53491E26149200331AA9 /* Build configuration list for PBXNativeTarget "FirebasePushMessaging" */;
+			buildPhases = (
+				DB8E35E7425E72A06093C51E /* [CP] Check Pods Manifest.lock */,
+				20BA53331E26149200331AA9 /* Sources */,
+				20BA53341E26149200331AA9 /* Frameworks */,
+				20BA53351E26149200331AA9 /* Resources */,
+				D7D57C3E81A36A97BCDC8D37 /* [CP] Embed Pods Frameworks */,
+				024260EB823ABC53B300405D /* [CP] Copy Pods Resources */,
+				20BA53671E262B8A00331AA9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20BA53621E262B8A00331AA9 /* PBXTargetDependency */,
+				200F030E1E2797B60073099B /* PBXTargetDependency */,
+			);
+			name = FirebasePushMessaging;
+			productName = FirebasePushMessaging;
+			productReference = 20BA53371E26149200331AA9 /* FirebasePushMessaging.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20BA53561E262B8A00331AA9 /* FCMPushNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20BA53641E262B8A00331AA9 /* Build configuration list for PBXNativeTarget "FCMPushNotification" */;
+			buildPhases = (
+				20BA53531E262B8A00331AA9 /* Sources */,
+				20BA53541E262B8A00331AA9 /* Frameworks */,
+				20BA53551E262B8A00331AA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FCMPushNotification;
+			productName = FCMPushNotification;
+			productReference = 20BA53571E262B8A00331AA9 /* FCMPushNotification.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20BA532F1E26149200331AA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Shridhar Mali";
+				TargetAttributes = {
+					200F03071E2797B60073099B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 27KRJ3F74B;
+						ProvisioningStyle = Automatic;
+					};
+					20BA53361E26149200331AA9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 27KRJ3F74B;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					20BA53561E262B8A00331AA9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 27KRJ3F74B;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 20BA53321E26149200331AA9 /* Build configuration list for PBXProject "FirebasePushMessaging" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20BA532E1E26149200331AA9;
+			productRefGroup = 20BA53381E26149200331AA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20BA53361E26149200331AA9 /* FirebasePushMessaging */,
+				20BA53561E262B8A00331AA9 /* FCMPushNotification */,
+				200F03071E2797B60073099B /* FCMNotificationService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		200F03061E2797B60073099B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20BA53351E26149200331AA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20BA53451E26149200331AA9 /* LaunchScreen.storyboard in Resources */,
+				20BA534D1E2615AC00331AA9 /* GoogleService-Info.plist in Resources */,
+				20BA53421E26149200331AA9 /* Assets.xcassets in Resources */,
+				20BA53401E26149200331AA9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20BA53551E262B8A00331AA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20BA535F1E262B8A00331AA9 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		024260EB823ABC53B300405D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirebasePushMessaging/Pods-FirebasePushMessaging-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7D57C3E81A36A97BCDC8D37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirebasePushMessaging/Pods-FirebasePushMessaging-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB8E35E7425E72A06093C51E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		200F03041E2797B60073099B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200F030B1E2797B60073099B /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20BA53331E26149200331AA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20BA533D1E26149200331AA9 /* ViewController.swift in Sources */,
+				20BA533B1E26149200331AA9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20BA53531E262B8A00331AA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20BA535C1E262B8A00331AA9 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		200F030E1E2797B60073099B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 200F03071E2797B60073099B /* FCMNotificationService */;
+			targetProxy = 200F030D1E2797B60073099B /* PBXContainerItemProxy */;
+		};
+		20BA53621E262B8A00331AA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20BA53561E262B8A00331AA9 /* FCMPushNotification */;
+			targetProxy = 20BA53611E262B8A00331AA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20BA533E1E26149200331AA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20BA533F1E26149200331AA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20BA53431E26149200331AA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20BA53441E26149200331AA9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		20BA535D1E262B8A00331AA9 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20BA535E1E262B8A00331AA9 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		200F03101E2797B60073099B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 27KRJ3F74B;
+				INFOPLIST_FILE = FCMNotificationService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Altimetrik.FCMAnalytics.FCMNotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		200F03111E2797B60073099B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 27KRJ3F74B;
+				INFOPLIST_FILE = FCMNotificationService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Altimetrik.FCMAnalytics.FCMNotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		20BA53471E26149200331AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20BA53481E26149200331AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20BA534A1E26149200331AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CE8850E3713443B33DD6590 /* Pods-FirebasePushMessaging.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirebasePushMessaging/FirebasePushMessaging.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 27KRJ3F74B;
+				INFOPLIST_FILE = FirebasePushMessaging/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Altimetrik.FCMAnalytics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		20BA534B1E26149200331AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A88D6C1FBE5839E3E144BD2 /* Pods-FirebasePushMessaging.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirebasePushMessaging/FirebasePushMessaging.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 27KRJ3F74B;
+				INFOPLIST_FILE = FirebasePushMessaging/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Altimetrik.FCMAnalytics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		20BA53651E262B8A00331AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 27KRJ3F74B;
+				INFOPLIST_FILE = FCMPushNotification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Altimetrik.FCMAnalytics.FCMPushNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		20BA53661E262B8A00331AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 27KRJ3F74B;
+				INFOPLIST_FILE = FCMPushNotification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Altimetrik.FCMAnalytics.FCMPushNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		200F03121E2797B60073099B /* Build configuration list for PBXNativeTarget "FCMNotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				200F03101E2797B60073099B /* Debug */,
+				200F03111E2797B60073099B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		20BA53321E26149200331AA9 /* Build configuration list for PBXProject "FirebasePushMessaging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20BA53471E26149200331AA9 /* Debug */,
+				20BA53481E26149200331AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20BA53491E26149200331AA9 /* Build configuration list for PBXNativeTarget "FirebasePushMessaging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20BA534A1E26149200331AA9 /* Debug */,
+				20BA534B1E26149200331AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20BA53641E262B8A00331AA9 /* Build configuration list for PBXNativeTarget "FCMPushNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20BA53651E262B8A00331AA9 /* Debug */,
+				20BA53661E262B8A00331AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20BA532F1E26149200331AA9 /* Project object */;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>182624802583-9tcbqbgj9egqqrdin8r7vvcfqpoc5lsr.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.182624802583-9tcbqbgj9egqqrdin8r7vvcfqpoc5lsr</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAvjpRwjV49xs0Lqtrwp9MtxdjY3N0v3Ws</string>
+	<key>GCM_SENDER_ID</key>
+	<string>182624802583</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Altimetrik.FCMAnalytics</string>
+	<key>PROJECT_ID</key>
+	<string>fir-pushmessaging-ef09d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fir-pushmessaging-ef09d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:182624802583:ios:1a9ce7d318130c75</string>
+	<key>DATABASE_URL</key>
+	<string>https://fir-pushmessaging-ef09d.firebaseio.com</string>
+</dict>
+</plist>

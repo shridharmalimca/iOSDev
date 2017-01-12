@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Sqlite
+// import Sqlite
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -24,7 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func createDataBase() {
-        var database: SqLite = nil
+        var database = Sqlite
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
