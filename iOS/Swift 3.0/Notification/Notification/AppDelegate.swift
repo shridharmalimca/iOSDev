@@ -52,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         oKAction.isDestructive = false
         oKAction.activationMode = .background
         oKAction.isAuthenticationRequired = false
-        oKAction.behavior = .default
+        oKAction.behavior = .textInput
         
         let cancelAction = UIMutableUserNotificationAction()
         cancelAction.title = "Cancel"

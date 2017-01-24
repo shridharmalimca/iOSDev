@@ -16,7 +16,7 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
     
     @IBOutlet weak var pathLbl: UILabel!
     @IBOutlet weak var imgView: UIImageView!
-    @IBOutlet weak var btnShare: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any required interface initialization here.
@@ -24,7 +24,7 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
     
     func didReceive(_ notification: UNNotification) {
         print("notification.request.content.body")
-        self.label?.text = notification.request.content.body
+        self.label?.text = "ISHAFOUNDATION"// notification.request.content.body
         let content = notification.request.content
         
         if let attachment = content.attachments.first {
@@ -36,9 +36,5 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
             }
         }
         
-    }
-
-    @IBAction func btnShareClicked(_ sender: Any) {
-        print("btnShareClicked")
     }
 }
