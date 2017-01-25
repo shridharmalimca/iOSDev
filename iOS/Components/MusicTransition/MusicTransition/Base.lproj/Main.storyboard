@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WpC-19-Oth">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="-468"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="zfh-K2-l9a">
+            <objects>
+                <viewController id="Yrk-hW-QJL" customClass="SecondViewController" customModule="MusicTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fmf-XY-g0V"/>
+                        <viewControllerLayoutGuide type="bottom" id="E8d-Yg-u2z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dId-fq-hr6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09W-hl-QcM">
+                                <rect key="frame" x="60" y="174" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="closeBtnClicked:" destination="Yrk-hW-QJL" eventType="touchUpInside" id="Ln3-SU-Jmw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PhH-54-PpT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LE1-rg-LSV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="649.92503748125944"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eq1-k0-zbg">
+            <objects>
+                <viewController id="wh7-VA-Mv4" customClass="ViewController" customModule="MusicTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SBM-1d-kk9"/>
+                        <viewControllerLayoutGuide type="bottom" id="mKm-SV-PIu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kHC-bn-VZB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVT-ym-3ZM">
+                                <rect key="frame" x="43" y="158" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnClicked:" destination="wh7-VA-Mv4" eventType="touchUpInside" id="hhg-e1-bnE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="COS-Lk-T6v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NFB-2f-JMU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="-5.8470764617691158"/>
+        </scene>
+        <!--Mini Player View Controller-->
+        <scene sceneID="xMd-n0-p51">
+            <objects>
+                <viewController id="EuB-ST-xY0" customClass="MiniPlayerViewController" customModule="MusicTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DPO-ti-12M"/>
+                        <viewControllerLayoutGuide type="bottom" id="zMF-Xe-foW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Alj-pP-gl5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uCq-gv-CLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2758" y="2"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="eb3-5e-iTl">
+            <objects>
+                <tabBarController id="WpC-19-Oth" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="g6p-vw-gO9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5MK-Tc-cWY" kind="relationship" relationship="viewControllers" id="FMC-m6-E4Y"/>
+                        <segue destination="fEN-1A-eNB" kind="relationship" relationship="viewControllers" id="GLN-te-Bfy"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="alr-Do-DJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7" y="323"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="xtE-VT-0Vm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5MK-Tc-cWY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 1" id="O89-ra-gWF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6p4-Pe-NrM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wh7-VA-Mv4" kind="relationship" relationship="rootViewController" id="HMU-tv-IcV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wvo-Ub-ifz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.79999999999995" y="-5.8470764617691158"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="k9E-RS-fEQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fEN-1A-eNB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 2" id="1D1-SH-RG4"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wnU-PV-vem">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Yrk-hW-QJL" kind="relationship" relationship="rootViewController" id="dwN-CE-1sm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tGB-4H-8CN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.79999999999995" y="649.92503748125944"/>
+        </scene>
+    </scenes>
+</document>

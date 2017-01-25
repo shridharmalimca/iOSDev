@@ -1,0 +1,6 @@
+framework module SRKUtility {
+  umbrella header "SRKUtility-umbrella.h"
+
+  export *
+  module * { export * }
+}
