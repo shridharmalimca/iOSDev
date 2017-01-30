@@ -1,5 +1,13 @@
 # AlertDialog
 
+A AlertDialog can
+
+- Show title 
+- Show upto three(3) buttons
+- Show list of items
+- Show custom layout (We have to use DialogFragment as a container for dialog)
+
+## Simple Alert Dialog
 ### In  activity_main.xml file 
 
 ```
@@ -65,4 +73,93 @@ public void showAlert(View v) {
 ### Output
 ![Output](https://github.com/shridharmalimca/iOSDev/blob/master/Android/step.png)
 
+
+## Alert dialog using fragment
+
+Steps:
+1) Right click and add new java class and name it ``` AlertFragment ``` 
+
+2) Get code after create class.
+
+``` 
+public class AlertFragment extends DialogFragment {
+
+}
+
+``` 
+
+3) Override onCreate method
+
+``` @Override
+    public Dialog onCreateDialog(Bundle savedInstanceState) {
+    
+    return (savedInstanceState);
+    
+ }
+    
+```
+ 
+ 4) Add Following code on onCreate() method for create AlertDialog
+ 
+ ```
+ AlertDialog.Builder builder =  new AlertDialog.Builder(getActivity());
+        builder.setMessage("All fields are mandatory");
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                 Toast.makeText(getActivity(),"Yes button clicked", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                 Toast.makeText(getActivity(),"No button clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        AlertDialog alert = builder.create();
+        return (alert);
+ 
+ ```
+ 
+ 
+ 5) Come back to MainActivity.java do following changes. 
+ 
+ Change ``` FragmentActivity  ``` on place of ``` AppCompatActivity ``` 
+ 
+ ``` 
+
+ public class MainActivity extends FragmentActivity {
+ 
+ 
+ }
+ 
+ ``` 
+ 
+ 6) MainActivity.java code 
+ 
+ ```
+ 
+ public class MainActivity extends FragmentActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+
+    public void showAlert(View v) {
+    AlertFragment alert = new AlertFragment();
+        alert.show(getSupportFragmentManager(), "Alert_Fragment");
+    }
+}
+ 
+ 
+ ```
+ 
+
+# Output
+![AlertDialog using DialogFragment]()
 
