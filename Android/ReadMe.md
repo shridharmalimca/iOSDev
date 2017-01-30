@@ -63,7 +63,6 @@ public void showAlert(View v) {
 
 
 ### Output
-
-[]
+![Output](https://github.com/shridharmalimca/iOSDev/blob/master/Android/step.png)
 
 
