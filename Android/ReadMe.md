@@ -93,7 +93,7 @@ public class AlertFragment extends DialogFragment {
 ``` @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
     
-    return (savedInstanceState);
+    return super.onCreateDialog(savedInstanceState);
     
  }
     
@@ -162,4 +162,10 @@ public class AlertFragment extends DialogFragment {
 
 # Output
 ![AlertDialog using DialogFragment](https://github.com/shridharmalimca/iOSDev/blob/master/Android/DialogFragment.png)
+
+
+## Alert Dialog with list items
+
+ 
+
 

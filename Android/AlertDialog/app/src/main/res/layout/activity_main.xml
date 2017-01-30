@@ -13,7 +13,30 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="Click"
-        android:onClick="showAlert"
+        android:id="@+id/simpleAlert"
+        android:onClick="showSimpleAlert"
         />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Dailog Fragment"
+        android:layout_below="@id/simpleAlert"
+        android:id="@+id/fragmentDialog"
+        android:onClick="dialogFragment"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragmentDialog"
+        android:text="List Dailog"
+        android:onClick="listDialog"
+        android:textAllCaps="false"
+        />
+
 </RelativeLayout>
