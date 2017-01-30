@@ -13,5 +13,4 @@
 
 
 ## Android
-* Alert Dialog 
-![Alert Dialog](https://github.com/shridharmalimca/iOSDev/tree/master/Android)
+* [Alert Dialog](https://github.com/shridharmalimca/iOSDev/tree/master/Android)
