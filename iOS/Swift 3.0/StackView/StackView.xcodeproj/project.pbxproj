@@ -299,6 +299,7 @@
 				20A65C0B1E41CCD6005FF56F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

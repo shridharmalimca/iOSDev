@@ -21,22 +21,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="GoQ-dX-zZt">
-                                <rect key="frame" x="67" y="114" width="240" height="382"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cjP-7g-YtR">
+                                <rect key="frame" x="20" y="28" width="335" height="462"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IuK-5o-DZs">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="191"/>
-                                        <color key="backgroundColor" red="0.85490196080000003" green="0.12549019610000001" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EA5-c9-oNO">
-                                        <rect key="frame" x="0.0" y="191" width="240" height="191"/>
-                                        <color key="backgroundColor" red="0.12571520650000001" green="0.83816261309999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c" translatesAutoresizingMaskIntoConstraints="NO" id="p87-tO-Lbk">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="147.5"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b" translatesAutoresizingMaskIntoConstraints="NO" id="7wt-SX-lN6">
+                                        <rect key="frame" x="0.0" y="157.5" width="335" height="147"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d" translatesAutoresizingMaskIntoConstraints="NO" id="Xr8-5e-gJo">
+                                        <rect key="frame" x="0.0" y="314.5" width="335" height="147.5"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7wt-SX-lN6" firstAttribute="centerY" secondItem="cjP-7g-YtR" secondAttribute="centerY" id="Afh-RK-jUE"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="yXp-hC-AVq">
+                                <rect key="frame" x="10" y="500" width="345" height="54"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="firstBaseline" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ihi-UE-2Qk">
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="33.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdL-yq-awT">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wG3-tF-W41">
+                                                <rect key="frame" x="140" y="3.5" width="90" height="30"/>
+                                                <state key="normal" title="Share Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lorem ipsum dkfjhksdhfkh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siE-mM-UtG">
+                                        <rect key="frame" x="0.0" y="33.5" width="197.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yXp-hC-AVq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="54S-Df-JNT"/>
+                            <constraint firstItem="yXp-hC-AVq" firstAttribute="top" secondItem="cjP-7g-YtR" secondAttribute="bottom" constant="10" id="6Vt-yJ-pd9"/>
+                            <constraint firstItem="cjP-7g-YtR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="9r2-za-T27"/>
+                            <constraint firstAttribute="trailing" secondItem="yXp-hC-AVq" secondAttribute="trailing" constant="20" id="pMM-Rn-JQN"/>
+                            <constraint firstAttribute="trailing" secondItem="cjP-7g-YtR" secondAttribute="trailing" constant="20" symbolic="YES" id="r8J-Rp-H7Q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cjP-7g-YtR" secondAttribute="bottom" constant="177" id="uBH-YN-ug1"/>
+                            <constraint firstItem="cjP-7g-YtR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="xxb-bx-7bC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -44,4 +82,9 @@
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="b" width="370" height="191"/>
+        <image name="c" width="399" height="220"/>
+        <image name="d" width="142" height="79"/>
+    </resources>
 </document>

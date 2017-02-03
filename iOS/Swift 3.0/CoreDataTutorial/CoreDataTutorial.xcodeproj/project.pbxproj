@@ -26,6 +26,7 @@
 		20A65C491E41E351005FF56F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20A65C4B1E41E351005FF56F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20A65C511E431512005FF56F /* AppointmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentViewController.swift; sourceTree = "<group>"; };
+		20D6F0E61E445DB600BF34BF /* CoreDataTutorialV2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataTutorialV2.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +310,7 @@
 				20A65C501E41E351005FF56F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -316,9 +318,10 @@
 		20A65C431E41E351005FF56F /* CoreDataTutorial.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				20D6F0E61E445DB600BF34BF /* CoreDataTutorialV2.xcdatamodel */,
 				20A65C441E41E351005FF56F /* CoreDataTutorial.xcdatamodel */,
 			);
-			currentVersion = 20A65C441E41E351005FF56F /* CoreDataTutorial.xcdatamodel */;
+			currentVersion = 20D6F0E61E445DB600BF34BF /* CoreDataTutorialV2.xcdatamodel */;
 			path = CoreDataTutorial.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
