@@ -39,9 +39,6 @@ class ViewController: UIViewController {
             let data = try getContext().fetch(fetchRequest)
             print(data.count)
             for patient in data as! [NSManagedObject] {
-                print(patient.value(forKey: "name")!)
-                print(patient.value(forKey: "age")!)
-                print(patient.value(forKey: "address")!)
                 patientData.append(patient)
             }
             tblPatient.reloadData()

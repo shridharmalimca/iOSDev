@@ -73,6 +73,9 @@ class AppointmentViewController: UIViewController {
         if !appDelegate.isAddPatient {
             // Update
             print("Update here")
+            appDelegate.selectedPatient.setValue(name, forKey: "name")
+            appDelegate.selectedPatient.setValue(age, forKey: "age")
+            appDelegate.selectedPatient.setValue(address, forKey: "address")
             
         } else {
             // Add
