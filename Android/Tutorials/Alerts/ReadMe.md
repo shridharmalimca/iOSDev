@@ -71,7 +71,7 @@ public void showAlert(View v) {
 
 
 ### Output
-![Output](https://github.com/shridharmalimca/iOSDev/blob/master/Android/step.png)
+![Output](https://github.com/shridharmalimca/iOSDev/blob/master/Android/Tutorials/Alerts/step.png)
 
 
 ## Alert dialog using fragment
@@ -161,7 +161,7 @@ public class AlertFragment extends DialogFragment {
  
 
 # Output
-![AlertDialog using DialogFragment](https://github.com/shridharmalimca/iOSDev/blob/master/Android/DialogFragment.png)
+![AlertDialog using DialogFragment](https://github.com/shridharmalimca/iOSDev/blob/master/Android/Tutorials/Alerts/DialogFragment.png)
 
 
 ## Alert Dialog with list items
