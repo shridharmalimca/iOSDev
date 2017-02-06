@@ -1,5 +1,8 @@
 ## Life cycle of "Activity"
 
+()
+
+
 **onCreate()**
 
  - onCreate() method get called when activity is first created.
