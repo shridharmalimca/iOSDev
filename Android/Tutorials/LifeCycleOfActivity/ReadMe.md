@@ -1,6 +1,6 @@
 ## Life cycle of "Activity"
 
-()
+![Life cycle of android activity](https://github.com/shridharmalimca/iOSDev/blob/master/Android/Tutorials/LifeCycleOfActivity/LifeCycle.png)
 
 
 **onCreate()**
