@@ -1,0 +1,12 @@
+PODS:
+  - LTHPasscodeViewController (3.8.5)
+
+DEPENDENCIES:
+  - LTHPasscodeViewController
+
+SPEC CHECKSUMS:
+  LTHPasscodeViewController: 81ca26069c77393180ccf208f3a3d39e04a9cb31
+
+PODFILE CHECKSUM: baca2dc4291362ca76bd384bb14c42d527e3e68f
+
+COCOAPODS: 1.1.1
