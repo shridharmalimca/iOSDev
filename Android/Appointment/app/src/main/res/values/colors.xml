@@ -7,4 +7,5 @@
     <color name="editTextColor">#0d0c0c</color>
     <color name="buttonTextColor">#0d0c0c</color>
     <color name="buttonBackgroundColor">#019dd1</color>
+    <color name="backgroundColor">#fff</color>
 </resources>
