@@ -43,5 +43,65 @@
 ![](Step1.png)
 
 
+2) Open Main.storyboard file, selecte view controller xib file and Embed in Navigation controller.
+
+![](Step2.png)
+
+After Embed view controller it will be look like following screen
+
+![](Step2-1.png)
+
+3) We have to design application for Insert, Select, Update and Delete operations.
+
+Add ***rightBarButtonItem*** on the navigationBar using following code in viewWillAppear of ViewController 
+
+```
+self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(self.addRecord))
+
+```
+
+```
+func addRecord() {
+        
+}
+    
+```
+
+4) Add ViewController for Insert record in the database.
+
+Drag ViewController from Library and drop into Main.storyboard, Make connection from ViewController to dragged ViewController using Control Key -> Select Present Modally.
+
+![](Step4.png)
+
+Add identifier **addRecord** for segue 
+
+![](Step4-1.png)
+
+5) Design Screen for Insert Record with fields
+Name, Age and Address and a buttons for save.
+
+![](Step5.png)
+
+6) Add new file of **AddPatientViewController** of type UIViewController and assign to this ViewController also create IBOutlets of all controls 
+
+```
+	@IBOutlet weak var nameTxt: UITextField!
+    @IBOutlet weak var ageTxt: UITextField!
+    @IBOutlet weak var addressTxt: UITextField!
+    @IBOutlet weak var saveBtn: UIButton!
+    
+```
+
+Create IBAction of Save Button
+
+```
+
+@IBAction func saveBtnClicked(_ sender: Any) {
+    }
+    
+```
+
+
+
 
   
