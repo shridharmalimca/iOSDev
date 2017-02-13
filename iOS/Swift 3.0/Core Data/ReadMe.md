@@ -73,7 +73,7 @@ Drag ViewController from Library and drop into Main.storyboard, Make connection 
 
 ![](Step4.png)
 
-Add identifier **addRecord** for segue 
+Add identifier **addAppointment** for segue 
 
 ![](Step4-1.png)
 
@@ -82,21 +82,21 @@ Name, Age and Address and a buttons for save.
 
 ![](Step5.png)
 
-6) Add new file of **AddPatientViewController** of type UIViewController and assign to this ViewController also create IBOutlets of all controls 
+6) Add new file of **AppointmentViewController** of type UIViewController and assign to this ViewController also create IBOutlets of all controls 
 
 ```
-	@IBOutlet weak var nameTxt: UITextField!
-    @IBOutlet weak var ageTxt: UITextField!
-    @IBOutlet weak var addressTxt: UITextField!
-    @IBOutlet weak var saveBtn: UIButton!
+	 @IBOutlet weak var confirmBtn: UIButton!
+    @IBOutlet weak var nameOfPatient: UITextField!
+    @IBOutlet weak var ageOfPatient: UITextField!
+    @IBOutlet weak var addressOfPatient: UITextField!
     
 ```
 
-Create IBAction of Save Button
+Create IBAction of Confirm Button
 
 ```
 
-@IBAction func saveBtnClicked(_ sender: Any) {
+ @IBAction func confirmAppointment(_ sender: Any){
     }
     
 ```
@@ -168,18 +168,101 @@ We need `persistentContainer.viewContext` as context in controllers when we deal
 - `persistentStoreDescriptions` as Type of `[NSPersistentStoreDescription]`.
 
 
-8) Open **AddPatientViewController** 
+8) Open **AppointmentViewController** 
 
 - Import CoreData framework
 - create constant variable 
-`let delegate = UIApplication.shared.delegate as! AppDelegate`
+`let appDelegate = UIApplication.shared.delegate as! AppDelegate`
 - Add function 
 
 ```
 func getContext() -> NSManagedObjectContext {
-        return delegate.persistentContainer.viewContext
+        return appDelegate.persistentContainer.viewContext
     }
 ```
+
+```
+ @IBAction func confirmAppointment(_ sender: Any) {
+        
+        if nameOfPatient.text?.characters.count == 0 {
+            
+        } else if ageOfPatient.text?.characters.count == 0 {
+            
+        } else if addressOfPatient.text?.characters.count == 0 {
+            
+        } else {
+            let name: String! = nameOfPatient.text
+            let age: Int! = Int(ageOfPatient.text!)
+            let address: String! = addressOfPatient.text
+            print(name)
+            print(age)
+            print(address)
+            
+            saveDataInDatabase(name: name, age: age, address: address)
+        }
+        
+    }
+
+```
+
+```
+
+func saveDataInDatabase(name: String, age: Int, address: String) {
+        let context = getContext()
+        //retrieve the entity that we just created
+        let entity =  NSEntityDescription.entity(forEntityName: "Student", in: context)
+        let manageObjectStudent = NSManagedObject(entity: entity!, insertInto: context)
+        if !appDelegate.isAddPatient {
+            // Update
+            print("Update here")
+            appDelegate.selectedPatient.setValue(name, forKey: "name")
+            appDelegate.selectedPatient.setValue(age, forKey: "age")
+            appDelegate.selectedPatient.setValue(address, forKey: "address")
+            
+        } else {
+            // Add
+            manageObjectStudent.setValue(name, forKey: "name")
+            manageObjectStudent.setValue(age, forKey: "age")
+            manageObjectStudent.setValue(address, forKey: "address")
+            
+        }
+        
+        //save the object
+        do {
+            try context.save()
+            print("saved!")
+            self.dismiss(animated: true, completion: nil)
+        } catch let error as NSError {
+            print("Could not save \(error), \(error.userInfo)")
+        } catch {
+            
+        }
+    }
+    
+    
+```
+ 
+Set delegate of all UITextFields and add following code.
+
+```
+
+extension AppointmentViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return true
+    }
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+    }
+}
+
+```
+
+
+
 
 
 
