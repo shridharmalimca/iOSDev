@@ -176,7 +176,7 @@ We need `persistentContainer.viewContext` as context in controllers when we deal
 - Add function 
 
 ```
-func getContect() -> NSManagedObjectContext {
+func getContext() -> NSManagedObjectContext {
         return delegate.persistentContainer.viewContext
     }
 ```
