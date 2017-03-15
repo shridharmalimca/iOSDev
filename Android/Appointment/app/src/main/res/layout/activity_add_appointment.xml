@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_add_appointment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -27,6 +28,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/layoutName"
         android:layout_marginTop="10dp"
+
         >
 
         <EditText
@@ -34,7 +36,9 @@
             android:layout_height="wrap_content"
             android:hint="Enter name"
             android:inputType="textPersonName"
-            android:textColor="@color/editTextColor" />
+            android:textColor="@color/editTextColor"
+            android:id="@+id/patientName"
+            />
 
     </android.support.design.widget.TextInputLayout>
 
@@ -42,46 +46,79 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/layoutMobile"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+
+        >
 
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter mobile"
-            android:inputType="textPhonetic"
-            android:textColor="@color/editTextColor" />
+            android:inputType="text|phone"
+            android:textColor="@color/editTextColor"
+            android:id="@+id/patientMobile"
+
+            />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/layoutEmail"
-        android:layout_marginTop="10dp" >
+        android:layout_marginTop="10dp"
+
+        >
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter email"
             android:inputType="textEmailAddress"
-            android:textColor="@color/editTextColor" />
+            android:textColor="@color/editTextColor"
+            android:id="@+id/patientEmail"
+            />
     </android.support.design.widget.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/layoutDateTime"
-        android:layout_marginTop="10dp" >
-
-        <EditText
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter date and time"
-            android:inputType="datetime"
-            android:textColor="@color/editTextColor" />
+            android:id="@+id/layoutDateTime"
+            android:layout_marginTop="10dp"
 
+            >
 
-    </android.support.design.widget.TextInputLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select date"
+                android:inputType="text|datetime"
+                android:textColor="@color/editTextColor"
+                android:id="@+id/appointmentDate"
+                android:onClick="selecteDate"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutTime"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select time"
+                android:inputType="text|datetime"
+                android:textColor="@color/editTextColor"
+                android:id="@+id/appointmentTime"
+                android:onClick="selecteTime"
+                />
+
+        </android.support.design.widget.TextInputLayout>
 
     <Button
         android:layout_width="fill_parent"

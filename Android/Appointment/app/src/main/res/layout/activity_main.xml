@@ -85,10 +85,24 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/backgroundColor"
     tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="appPatient"
+        android:background="@color/buttonBackgroundColor"
+        android:textColor="@color/buttonTextColor"
+        android:text="Add Patient"
+
+        />
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:paddingTop="80sp"
         >
 
     <android.support.v7.widget.RecyclerView
@@ -96,19 +110,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical" >
+
         </android.support.v7.widget.RecyclerView>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/recycler_view"
-        android:onClick="appPatient"
-        android:background="@color/buttonBackgroundColor"
-        android:textColor="@color/buttonTextColor"
-        android:text="Add Patient"
-        />
-
     </LinearLayout>
+
+
+
 
 </RelativeLayout>
 
