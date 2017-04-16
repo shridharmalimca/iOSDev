@@ -56,7 +56,7 @@ class ViewController: UIViewController {
     
     func getImage(){
         let fileManager = FileManager.default
-        let imagePAth = (self.getDocumentDirPath() as NSString).appendingPathComponent("apple.jpg")
+        let imagePAth = (self.getDocumentDirPath() as NSString).appendingPathComponent("apple.png")
         if fileManager.fileExists(atPath: imagePAth){
             self.imgView.image = UIImage(contentsOfFile: imagePAth)
         }else{
@@ -77,13 +77,13 @@ extension ViewController: URLSessionDownloadDelegate {
         
         let fileManager = FileManager.default
         let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let paths = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent("apple.jpg")
+        let paths = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent("apple.png")
         do {
             try FileManager.default.copyItem(at: location, to: url[0])
         } catch let error {
         print("Error while save image \(error)")
         }
-        let image = UIImage(named: "apple.jpg")
+        let image = UIImage(named: "apple.png")
         print(paths)
         if let image = image {
             let imageData = UIImageJPEGRepresentation(image, 0.5)

@@ -1,0 +1,6 @@
+framework module KSReachability {
+  umbrella header "KSReachability-umbrella.h"
+
+  export *
+  module * { export * }
+}

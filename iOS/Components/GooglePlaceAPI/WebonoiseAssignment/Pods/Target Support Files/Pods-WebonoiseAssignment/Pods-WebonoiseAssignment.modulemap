@@ -1,0 +1,6 @@
+framework module Pods_WebonoiseAssignment {
+  umbrella header "Pods-WebonoiseAssignment-umbrella.h"
+
+  export *
+  module * { export * }
+}

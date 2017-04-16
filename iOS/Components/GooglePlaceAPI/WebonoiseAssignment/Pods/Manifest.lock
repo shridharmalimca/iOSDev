@@ -1,0 +1,30 @@
+PODS:
+  - Gloss (1.2.1)
+  - GoogleMaps (2.2.0):
+    - GoogleMaps/Maps (= 2.2.0)
+  - GoogleMaps/Base (2.2.0)
+  - GoogleMaps/Maps (2.2.0):
+    - GoogleMaps/Base
+  - KSReachability (1.4.1)
+  - MBProgressHUD (1.0.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+
+DEPENDENCIES:
+  - Gloss
+  - GoogleMaps
+  - KSReachability
+  - MBProgressHUD
+  - SDWebImage
+
+SPEC CHECKSUMS:
+  Gloss: 9ab33b8ede01e4232571d43a6bf9259b85d1de69
+  GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
+  KSReachability: ddf4af6e6488c45c5c41c59e72d72d078062ee28
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+
+PODFILE CHECKSUM: 21fbfcede8faa12cfcdca346b595595f51aa51ba
+
+COCOAPODS: 1.0.1
