@@ -7,12 +7,6 @@
 //
 
 
-enum SpeedLimits: Equatable {
-    case uptoThirty
-    case uptoSixty
-    case uptoEighty
-    case uptoHundred
-}
 
 import UIKit
 import CoreLocation
@@ -24,11 +18,11 @@ class LocationManagerHelper: NSObject {
     var userLocation = CLLocation()
     var speedInKmPerHour: Double = 0.0
     var previousSpeedInKmPerHour: Double = 0.0
-    var timePassedInMins: Int = 0
-    var isCrossedSpeedLimit: Bool = false
     var timer = Timer()
     var isTimerSetForSpeed: Bool = false
     var isSpeedChanged: Bool = false
+    var currentTimeInterval: Int = 0
+    var nextTimeInterval:Int = 0
     public func updateUserLocation() {
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestAlwaysAuthorization()
@@ -45,13 +39,14 @@ class LocationManagerHelper: NSObject {
         return CLLocation(latitude: latitude, longitude: longitude)
     }
     
-    public func calculate() {
+    public func locationUpdatesAsPerCalculatedSpeedOfVehicle() {
     
-        if speedInKmPerHour != previousSpeedInKmPerHour && previousSpeedInKmPerHour > 0.0 {
+        // Manual testing for speed uses Textfield on the home view controller
+       /* if speedInKmPerHour != previousSpeedInKmPerHour && previousSpeedInKmPerHour > 0.0 {
             isSpeedChanged = true
         } else {
             isSpeedChanged = false
-        }
+        }*/
         
         if isSpeedChanged {
             if (speedInKmPerHour > 0 || speedInKmPerHour < 30) && previousSpeedInKmPerHour < 30 {
@@ -91,18 +86,20 @@ class LocationManagerHelper: NSObject {
             print("0..<30 KM/h")
             if (!isTimerSetForSpeed) {
                 stopTimer()
-                setTimer(timeInterval: 10)// 300)
+                setTimer(timeInterval: 300) // 60 * 5
                 previousSpeedInKmPerHour = speedInKmPerHour
-                // _ = SpeedLimits(rawValue: 0)
+                currentTimeInterval = 300
+                nextTimeInterval = 120
             }
         case 30..<60:
             // capture location after 2 mins
             print("30..<60 KM/h")
             if !isTimerSetForSpeed {
                 stopTimer()
-                setTimer(timeInterval: 5) // 120)
+                setTimer(timeInterval: 120) // 60 * 2
                 previousSpeedInKmPerHour = speedInKmPerHour
-                // SpeedLimits(rawValue: 1)
+                currentTimeInterval = 120
+                nextTimeInterval = 60
             } else {
                 
             }
@@ -111,18 +108,20 @@ class LocationManagerHelper: NSObject {
             print("60..<80 KM/h")
             if !isTimerSetForSpeed {
                 stopTimer()
-                setTimer(timeInterval: 3)// 60)
+                setTimer(timeInterval: 60)
                 previousSpeedInKmPerHour = speedInKmPerHour
-                // _ = SpeedLimits.uptoEighty
+                currentTimeInterval = 60
+                nextTimeInterval = 30
             }
         case 80..<500:
             // capture location after 30 secs
             print("80..<500 KM/h")
             if !isTimerSetForSpeed {
                 stopTimer()
-                setTimer(timeInterval: 2)// 30)
+                setTimer(timeInterval: 30) // 30 sec
                 previousSpeedInKmPerHour = speedInKmPerHour
-                // _ = SpeedLimits.uptoHundred
+                currentTimeInterval = 30
+                nextTimeInterval = 60
             }
         default:
             print("Device is at ideal position or invalid speed found")
@@ -142,30 +141,56 @@ class LocationManagerHelper: NSObject {
     func captureLocation() {
         print("**************Capture location now...***********")
         print("Capture user location is \(userLocation)")
+        saveUserLocationInFile()
         // Save user location in DB
         saveUserLocationInDB()
-        // isTimerSetForSpeed = false
+    }
+    
+    func saveUserLocationInFile() {
+        let fileManager = FileManager.default
+        let dir: URL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).last!
+        let fileurl = dir.appendingPathComponent("locations.txt")
+        let headingText = "\t\t Time \t\t\t\t Latitude \t\t\t Longitude \t\t\t Current time interval \t\t Next time interval \n"
+        let separator = "--------------------------------------------------------------------------------------------------------------------------------"
+        let contentToWrite = " \(headingText) \(Date().addingTimeInterval(0)) \t \(latitude) \t\t\t \(longitude) \t\t\t\t\t \(currentTimeInterval) \t\t\t\t\t\t \(nextTimeInterval) \n \(separator) \n"
+        let data = contentToWrite.data(using: .utf8, allowLossyConversion: false)!
+        
+        if fileManager.fileExists(atPath: fileurl.path) {
+            do {
+                let fileHandle = try FileHandle(forWritingTo: fileurl)
+                fileHandle.seekToEndOfFile()
+                fileHandle.write(data)
+                fileHandle.closeFile()
+            } catch let error {
+                print("file handle failed \(error.localizedDescription)")
+            }
+        } else {
+            do {
+            _ = try data.write(to: fileurl, options: .atomic)
+            } catch let error {
+                print("cant write \(error.localizedDescription)")
+            }
+        }
+        readFile()
+    }
+    
+    func readFile() {
+        let path = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask , true)
+        let docDir = path[0]
+        let sampleFilePath = docDir.appendingFormat("/locations.txt")
+        do {
+            let contentOfFile = try String(contentsOfFile: sampleFilePath, encoding: .utf8)
+            print("file content is: \(contentOfFile)")
+        } catch {
+            print("Error while read file")
+        }
     }
     
     func saveUserLocationInDB() {
         print("saveUserLocationInDB")
+        let objDBHelper = DBHelper.instance
+        objDBHelper.saveLocationUpdatedDataInLocalDB(time: userLocation.timestamp, latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude, currentTimeInterval: currentTimeInterval, nextTimeInterval: nextTimeInterval, speed: speedInKmPerHour)
     }
-    
-    /*static func ==(lhs: SpeedLimits, rhs:SpeedLimits) -> Bool {
-        switch (lhs, rhs) {
-        case (.uptoThirty,  .uptoThirty):
-            return true
-        case (.uptoSixty, .uptoSixty):
-            return true
-        case (.uptoEighty, .uptoEighty):
-            return true
-        case (.uptoHundred, .uptoHundred):
-            return true
-        default:
-            return false
-        }
-        return false
-    }*/
 }
 
 extension LocationManagerHelper: CLLocationManagerDelegate {
@@ -183,16 +208,15 @@ extension LocationManagerHelper: CLLocationManagerDelegate {
             // 5m/sec = (5 * 3.6) = 18 km/h
              speedInKmPerHour = (speedInMeterPerSecond * 3.6)
            // print("speed \(speedInKmPerHour) Km/h")
-           /* if speedInKmPerHour != previousSpeedInKmPerHour && previousSpeedInKmPerHour > 0.0 {
+            if speedInKmPerHour != previousSpeedInKmPerHour && previousSpeedInKmPerHour > 0.0 {
                 isSpeedChanged = true
             } else {
                 isSpeedChanged = false
             }
-            calculate()
-            */
+            locationUpdatesAsPerCalculatedSpeedOfVehicle()
         }
         
-        // 1 Create a location
+        // Create a location
         userLocation = CLLocation(latitude: latitude, longitude: longitude)
         print("User location is \(userLocation)")
     }

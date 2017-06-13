@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2017AC801EEFF92B002E15A5 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017AC7F1EEFF92B002E15A5 /* DBHelper.swift */; };
+		2017AC821EEFF98B002E15A5 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017AC811EEFF98B002E15A5 /* CoreDataService.swift */; };
+		2017AC841EEFFA08002E15A5 /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017AC831EEFFA08002E15A5 /* PersistentContainer.swift */; };
 		202D30BE1EEE68A10030B56A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202D30BD1EEE68A10030B56A /* AppDelegate.swift */; };
 		202D30C01EEE68A10030B56A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202D30BF1EEE68A10030B56A /* HomeViewController.swift */; };
 		202D30C31EEE68A10030B56A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 202D30C11EEE68A10030B56A /* Main.storyboard */; };
@@ -28,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2017AC7F1EEFF92B002E15A5 /* DBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		2017AC811EEFF98B002E15A5 /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		2017AC831EEFFA08002E15A5 /* PersistentContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
 		202D30BA1EEE68A10030B56A /* LocationTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		202D30BD1EEE68A10030B56A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		202D30BF1EEE68A10030B56A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +66,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2017AC851EEFFFCD002E15A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				202D30C11EEE68A10030B56A /* Main.storyboard */,
+				202D30C91EEE68A10030B56A /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2017AC861EEFFFE2002E15A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				202D30CC1EEE68A10030B56A /* Info.plist */,
+				202D30C71EEE68A10030B56A /* Assets.xcassets */,
+				202D30C41EEE68A10030B56A /* LocationTracking.xcdatamodeld */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2017AC871EEFFFF6002E15A5 /* Helpers and Models */ = {
+			isa = PBXGroup;
+			children = (
+				202D30E01EEE6C7C0030B56A /* LocationManagerHelper.swift */,
+				2017AC7F1EEFF92B002E15A5 /* DBHelper.swift */,
+				2017AC811EEFF98B002E15A5 /* CoreDataService.swift */,
+				2017AC831EEFFA08002E15A5 /* PersistentContainer.swift */,
+			);
+			name = "Helpers and Models";
+			sourceTree = "<group>";
+		};
+		2017AC881EF0000F002E15A5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				202D30BF1EEE68A10030B56A /* HomeViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		202D30B11EEE68A10030B56A = {
 			isa = PBXGroup;
 			children = (
@@ -82,13 +126,10 @@
 			isa = PBXGroup;
 			children = (
 				202D30BD1EEE68A10030B56A /* AppDelegate.swift */,
-				202D30BF1EEE68A10030B56A /* HomeViewController.swift */,
-				202D30C11EEE68A10030B56A /* Main.storyboard */,
-				202D30C71EEE68A10030B56A /* Assets.xcassets */,
-				202D30C91EEE68A10030B56A /* LaunchScreen.storyboard */,
-				202D30CC1EEE68A10030B56A /* Info.plist */,
-				202D30C41EEE68A10030B56A /* LocationTracking.xcdatamodeld */,
-				202D30E01EEE6C7C0030B56A /* LocationManagerHelper.swift */,
+				2017AC881EF0000F002E15A5 /* Controllers */,
+				2017AC851EEFFFCD002E15A5 /* Views */,
+				2017AC861EEFFFE2002E15A5 /* Resources */,
+				2017AC871EEFFFF6002E15A5 /* Helpers and Models */,
 			);
 			path = LocationTracking;
 			sourceTree = "<group>";
@@ -212,7 +253,10 @@
 			files = (
 				202D30C61EEE68A10030B56A /* LocationTracking.xcdatamodeld in Sources */,
 				202D30C01EEE68A10030B56A /* HomeViewController.swift in Sources */,
+				2017AC801EEFF92B002E15A5 /* DBHelper.swift in Sources */,
 				202D30E11EEE6C7C0030B56A /* LocationManagerHelper.swift in Sources */,
+				2017AC841EEFFA08002E15A5 /* PersistentContainer.swift in Sources */,
+				2017AC821EEFF98B002E15A5 /* CoreDataService.swift in Sources */,
 				202D30BE1EEE68A10030B56A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +469,7 @@
 				202D30DC1EEE68A10030B56A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		202D30DD1EEE68A10030B56A /* Build configuration list for PBXNativeTarget "LocationTrackingTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +478,7 @@
 				202D30DF1EEE68A10030B56A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

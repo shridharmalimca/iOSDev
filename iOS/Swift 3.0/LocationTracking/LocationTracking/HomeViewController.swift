@@ -30,10 +30,9 @@ class HomeViewController: UIViewController {
     // MARK:- Actions
     
     @IBAction func enableLocationUpdates(_ sender: UISwitch) {
-        print(sender.isOn == true ? "YES" : "NO")
+        // print(sender.isOn == true ? "YES" : "NO")
         if sender.isOn {
             locationManagerHelper.updateUserLocation()
-           // locationManagerHelper.calculate()
         } else {
             locationManagerHelper.stopLocationUpdate()
         }
@@ -43,13 +42,12 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
-        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        locationManagerHelper.speedInKmPerHour = Double(textField.text!)!
-        locationManagerHelper.calculate()
+        // locationManagerHelper.speedInKmPerHour = Double(textField.text!)!
+        // locationManagerHelper.locationUpdatesAsPerCalculatedSpeedOfVehicle()
         return true
     }
     
