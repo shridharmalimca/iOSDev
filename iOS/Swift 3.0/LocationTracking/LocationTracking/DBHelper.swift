@@ -13,6 +13,7 @@ class DBHelper: NSObject {
     let context = CoreDataService.shared.mainContext
     let backgroundContext = CoreDataService.shared.backgroundContext
     var locations = [NSManagedObject]()
+    // Save Updated user location In local DB
     func saveLocationUpdatedDataInLocalDB(time: Date, latitude: Double, longitude: Double, currentTimeInterval: Int, nextTimeInterval: Int, speed: Double) {
         let entity = NSEntityDescription.entity(forEntityName: "Locations", in: self.backgroundContext)
         let managedObjectRecord = NSManagedObject(entity: entity!, insertInto: self.backgroundContext)
@@ -32,6 +33,7 @@ class DBHelper: NSObject {
         }
     }
     
+    // Get Saved user locations from local DB
     func getLocationDataFromLocalDB() {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Locations")
         do {
@@ -44,6 +46,4 @@ class DBHelper: NSObject {
             print("Error while fetching locations \(err)")
         }
     }
-    
-    
 }
