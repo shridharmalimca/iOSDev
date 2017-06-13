@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         docDir = path[0]
         print("Document Dir Path: \(docDir)")
         createFile()
+        createDirectory()
     }
     
     func createFile() {
@@ -39,10 +40,18 @@ class ViewController: UIViewController {
         } catch {
             print("Error while write content in file")
         }
+        
+        readFile()
     }
     
     func readFile() {
-        
+        let sampleFilePath = docDir.appendingFormat("/Sample.txt")
+        do {
+            let contentOfFile = try String(contentsOfFile: sampleFilePath, encoding: .utf8)
+            print("file content is: \(contentOfFile)")
+        } catch {
+            print("Error while read file")
+        }
     }
     
     func deleteFile() {
@@ -50,7 +59,9 @@ class ViewController: UIViewController {
     }
     
     func createDirectory() {
-        
+        //let dir = docDir.appendingFormat("/MyDir/Sample.txt")
+        //createFile()
+        //print(dir)
     }
     
     func readDirectoryContent() {
