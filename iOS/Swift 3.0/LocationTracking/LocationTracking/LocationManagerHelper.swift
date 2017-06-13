@@ -23,6 +23,7 @@ class LocationManagerHelper: NSObject {
     var isSpeedChanged: Bool = false
     var currentTimeInterval: Int = 0
     var nextTimeInterval:Int = 0
+    
     public func updateUserLocation() {
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestAlwaysAuthorization()
@@ -139,13 +140,15 @@ class LocationManagerHelper: NSObject {
     }
     
     func captureLocation() {
-        print("**************Capture location now...***********")
-        print("Capture user location is \(userLocation)")
+        //print("**************Capture location now...***********")
+        //print("Capture user location is \(userLocation)")
+        
         saveUserLocationInFile()
         // Save user location in DB
         saveUserLocationInDB()
     }
     
+    //MARK:- Save User Location In File
     func saveUserLocationInFile() {
         let fileManager = FileManager.default
         let dir: URL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).last!
@@ -186,13 +189,14 @@ class LocationManagerHelper: NSObject {
         }
     }
     
+    // MARK:- Save User Location In DB
     func saveUserLocationInDB() {
         print("saveUserLocationInDB")
         let objDBHelper = DBHelper.instance
         objDBHelper.saveLocationUpdatedDataInLocalDB(time: userLocation.timestamp, latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude, currentTimeInterval: currentTimeInterval, nextTimeInterval: nextTimeInterval, speed: speedInKmPerHour)
     }
 }
-
+// MARK:- CLLocationManagerDelegate
 extension LocationManagerHelper: CLLocationManagerDelegate {
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let currentLocation = manager.location {
