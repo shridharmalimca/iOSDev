@@ -1,11 +1,3 @@
-//
-//  PersistentContainer.swift
-//  LocationTracking
-//
-//  Created by Shridhar Mali on 6/13/17.
-//  Copyright © 2017 Shridhar Mali. All rights reserved.
-//
-
 import CoreData
 
 struct CoreDataServiceConsts {

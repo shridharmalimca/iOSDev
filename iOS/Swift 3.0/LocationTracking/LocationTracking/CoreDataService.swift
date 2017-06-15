@@ -1,10 +1,3 @@
-//
-//  CoreDataService.swift
-//  LocationTracking
-//
-//  Created by Shridhar Mali on 6/13/17.
-//  Copyright © 2017 Shridhar Mali. All rights reserved.
-//
 
 import CoreData
 protocol CoreDataServiceProtocol:class {
@@ -25,14 +18,11 @@ final class CoreDataService: CoreDataServiceProtocol {
         let container = PersistentContainer(name: "LocationTracking")
         
         if let fileLocation = container.persistentStoreDescriptions[0].url?.absoluteString {
-            
             print("Core Database file location : \n\t \(fileLocation).")
-            
         }
         
         container.loadPersistentStores(completionHandler: { [weak self](storeDescription, error) in
             if let error = error {
-                NSLog("CoreData error \(error), \(String(describing: error._userInfo))")
                 self?.errorHandler(error)
             }
         })

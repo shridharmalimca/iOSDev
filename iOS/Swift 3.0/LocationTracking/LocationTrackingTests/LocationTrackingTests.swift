@@ -1,11 +1,3 @@
-//
-//  LocationTrackingTests.swift
-//  LocationTrackingTests
-//
-//  Created by Shridhar Mali on 6/12/17.
-//  Copyright © 2017 Shridhar Mali. All rights reserved.
-//
-
 import XCTest
 @testable import LocationTracking
 

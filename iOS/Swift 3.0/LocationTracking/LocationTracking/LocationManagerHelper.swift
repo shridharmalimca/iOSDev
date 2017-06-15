@@ -1,13 +1,3 @@
-//
-//  LocationManagerHelper.swift
-//  LocationTracking
-//
-//  Created by Shridhar Mali on 6/12/17.
-//  Copyright © 2017 Shridhar Mali. All rights reserved.
-//
-
-
-
 import UIKit
 import CoreLocation
 class LocationManagerHelper: NSObject {
@@ -42,7 +32,7 @@ class LocationManagerHelper: NSObject {
     
     public func locationUpdatesAsPerCalculatedSpeedOfVehicle() {
     
-        // Manual testing for speed uses Textfield on the home view controller
+        // Manual testing for speed using Textfield on the home view controller
        /* if speedInKmPerHour != previousSpeedInKmPerHour && previousSpeedInKmPerHour > 0.0 {
             isSpeedChanged = true
         } else {
@@ -140,9 +130,6 @@ class LocationManagerHelper: NSObject {
     }
     
     func captureLocation() {
-        //print("**************Capture location now...***********")
-        //print("Capture user location is \(userLocation)")
-        
         saveUserLocationInFile()
         // Save user location in DB
         saveUserLocationInDB()
@@ -222,7 +209,7 @@ extension LocationManagerHelper: CLLocationManagerDelegate {
         
         // Create a location
         userLocation = CLLocation(latitude: latitude, longitude: longitude)
-        print("User location is \(userLocation)")
+        // print("User location is \(userLocation)")
     }
     
     public func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
