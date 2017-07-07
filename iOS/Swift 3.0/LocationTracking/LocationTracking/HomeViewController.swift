@@ -3,6 +3,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var btn: UIButton!
     @IBOutlet weak var btnLocationUpdate: UISwitch!
     @IBOutlet weak var speedTxt: UITextField!
     let locationManagerHelper = LocationManagerHelper.sharedInstance
@@ -24,11 +25,11 @@ class HomeViewController: UIViewController {
     
     @IBAction func enableLocationUpdates(_ sender: UISwitch) {
         // print(sender.isOn == true ? "YES" : "NO")
-        if sender.isOn {
+       /* if sender.isOn {
             locationManagerHelper.updateUserLocation()
         } else {
             locationManagerHelper.stopLocationUpdate()
-        }
+        }*/
     }
 
 }

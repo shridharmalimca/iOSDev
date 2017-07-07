@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Viper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nnA-Zt-GM5">
+                                <rect key="frame" x="79" y="94" width="217" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="jNB-gB-vVa"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="svP-Vn-mB4">
+                                <rect key="frame" x="79" y="165" width="217" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="8yp-7V-vBR"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phZ-Lk-NqU">
+                                <rect key="frame" x="95" y="272" width="185" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SEL-rK-Wzn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="phZ-Lk-NqU" firstAttribute="top" secondItem="svP-Vn-mB4" secondAttribute="bottom" constant="77" id="CaZ-ba-NhN"/>
+                            <constraint firstItem="svP-Vn-mB4" firstAttribute="top" secondItem="nnA-Zt-GM5" secondAttribute="bottom" constant="41" id="Gay-zr-VdN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="phZ-Lk-NqU" secondAttribute="bottom" constant="365" id="Gb0-hI-b7Q"/>
+                            <constraint firstItem="phZ-Lk-NqU" firstAttribute="top" secondItem="svP-Vn-mB4" secondAttribute="bottom" constant="77" id="Ud5-TL-um9"/>
+                            <constraint firstAttribute="trailing" secondItem="svP-Vn-mB4" secondAttribute="trailing" constant="79" id="Vv8-xf-8N9"/>
+                            <constraint firstItem="phZ-Lk-NqU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="95" id="XIq-gn-k8J"/>
+                            <constraint firstItem="nnA-Zt-GM5" firstAttribute="trailing" secondItem="svP-Vn-mB4" secondAttribute="trailing" id="eQQ-zE-R0S"/>
+                            <constraint firstItem="nnA-Zt-GM5" firstAttribute="leading" secondItem="svP-Vn-mB4" secondAttribute="leading" id="gtW-8R-q0h"/>
+                            <constraint firstItem="svP-Vn-mB4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="79" id="jbf-2A-nyV"/>
+                            <constraint firstAttribute="trailing" secondItem="phZ-Lk-NqU" secondAttribute="trailing" constant="95" id="zWv-L5-hEW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtPassword" destination="svP-Vn-mB4" id="VjM-xt-ihK"/>
+                        <outlet property="txtUsername" destination="nnA-Zt-GM5" id="zhI-ON-iMr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>

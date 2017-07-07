@@ -1,7 +1,15 @@
-import XCTest
-@testable import LocationTracking
+//
+//  ViperTests.swift
+//  ViperTests
+//
+//  Created by Shridhar Mali on 6/27/17.
+//  Copyright © 2017 Shridhar Mali. All rights reserved.
+//
 
-class LocationTrackingTests: XCTestCase {
+import XCTest
+@testable import Viper
+
+class ViperTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

@@ -10,13 +10,13 @@
 		2017AC801EEFF92B002E15A5 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017AC7F1EEFF92B002E15A5 /* DBHelper.swift */; };
 		2017AC821EEFF98B002E15A5 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017AC811EEFF98B002E15A5 /* CoreDataService.swift */; };
 		2017AC841EEFFA08002E15A5 /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017AC831EEFFA08002E15A5 /* PersistentContainer.swift */; };
+		2017ACAC1EF2E4F3002E15A5 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017ACAB1EF2E4F3002E15A5 /* LocationTests.swift */; };
 		202D30BE1EEE68A10030B56A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202D30BD1EEE68A10030B56A /* AppDelegate.swift */; };
 		202D30C01EEE68A10030B56A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202D30BF1EEE68A10030B56A /* HomeViewController.swift */; };
 		202D30C31EEE68A10030B56A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 202D30C11EEE68A10030B56A /* Main.storyboard */; };
 		202D30C61EEE68A10030B56A /* LocationTracking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 202D30C41EEE68A10030B56A /* LocationTracking.xcdatamodeld */; };
 		202D30C81EEE68A10030B56A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 202D30C71EEE68A10030B56A /* Assets.xcassets */; };
 		202D30CB1EEE68A10030B56A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 202D30C91EEE68A10030B56A /* LaunchScreen.storyboard */; };
-		202D30D61EEE68A10030B56A /* LocationTrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202D30D51EEE68A10030B56A /* LocationTrackingTests.swift */; };
 		202D30E11EEE6C7C0030B56A /* LocationManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202D30E01EEE6C7C0030B56A /* LocationManagerHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +34,7 @@
 		2017AC7F1EEFF92B002E15A5 /* DBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		2017AC811EEFF98B002E15A5 /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		2017AC831EEFFA08002E15A5 /* PersistentContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
+		2017ACAB1EF2E4F3002E15A5 /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		202D30BA1EEE68A10030B56A /* LocationTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		202D30BD1EEE68A10030B56A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		202D30BF1EEE68A10030B56A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		202D30CA1EEE68A10030B56A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		202D30CC1EEE68A10030B56A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		202D30D11EEE68A10030B56A /* LocationTrackingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationTrackingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		202D30D51EEE68A10030B56A /* LocationTrackingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTrackingTests.swift; sourceTree = "<group>"; };
 		202D30D71EEE68A10030B56A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		202D30E01EEE6C7C0030B56A /* LocationManagerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManagerHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,8 +137,8 @@
 		202D30D41EEE68A10030B56A /* LocationTrackingTests */ = {
 			isa = PBXGroup;
 			children = (
-				202D30D51EEE68A10030B56A /* LocationTrackingTests.swift */,
 				202D30D71EEE68A10030B56A /* Info.plist */,
+				2017ACAB1EF2E4F3002E15A5 /* LocationTests.swift */,
 			);
 			path = LocationTrackingTests;
 			sourceTree = "<group>";
@@ -265,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				202D30D61EEE68A10030B56A /* LocationTrackingTests.swift in Sources */,
+				2017ACAC1EF2E4F3002E15A5 /* LocationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
