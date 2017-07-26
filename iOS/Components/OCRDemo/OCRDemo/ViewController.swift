@@ -10,6 +10,8 @@ import UIKit
 import TesseractOCR
 class ViewController: UIViewController,G8TesseractDelegate {
 
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var textView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -17,18 +19,13 @@ class ViewController: UIViewController,G8TesseractDelegate {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        imgView.image = UIImage(named: "IMG.png") //(named: "PanCard.png")//
         scanCard()
     }
     
     
     func scanCard() {
-        /* var tesseract:G8Tesseract = G8Tesseract(language:"eng+ita");
-         //tesseract.language = "eng+ita";
-         tesseract.delegate = self;
-         tesseract.charWhitelist = "01234567890";
-         tesseract.image = UIImage(named: "image_sample.jpg");
-         tesseract.recognize();*/
-        
         let tesseract = G8Tesseract(language: "eng+fra")// "eng+fra")
         tesseract?.engineMode = .tesseractCubeCombined
         tesseract?.pageSegmentationMode = .auto
@@ -39,10 +36,13 @@ class ViewController: UIViewController,G8TesseractDelegate {
         let recongnizedText = tesseract?.recognizedText
         if let rczTxt = recongnizedText {
             print("Text from the image \n \(rczTxt)")
+            textView.text = rczTxt
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
             // self.recoginzedText = rczTxt
         } else {
             // self.recoginzedText = ""
             print("problem while read")
+            textView.text = "Problem while read..."
         }
     }
     

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		202E855F1F25B76A00487D23 /* IMG.png in Resources */ = {isa = PBXBuildFile; fileRef = 202E855E1F25B76A00487D23 /* IMG.png */; };
 		202E85611F25B82800487D23 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 202E85601F25B82800487D23 /* tessdata */; };
+		202E85631F25E7E700487D23 /* PanCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 202E85621F25E7E700487D23 /* PanCard.png */; };
 		203C6D851F25B564001CC317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203C6D841F25B564001CC317 /* AppDelegate.swift */; };
 		203C6D871F25B564001CC317 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203C6D861F25B564001CC317 /* ViewController.swift */; };
 		203C6D8A1F25B564001CC317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203C6D881F25B564001CC317 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		202E855E1F25B76A00487D23 /* IMG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG.png; sourceTree = "<group>"; };
 		202E85601F25B82800487D23 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		202E85621F25E7E700487D23 /* PanCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PanCard.png; sourceTree = "<group>"; };
 		203C6D811F25B564001CC317 /* OCRDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCRDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		203C6D841F25B564001CC317 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		203C6D861F25B564001CC317 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			children = (
 				203C6D841F25B564001CC317 /* AppDelegate.swift */,
 				203C6D861F25B564001CC317 /* ViewController.swift */,
+				202E85621F25E7E700487D23 /* PanCard.png */,
 				202E855E1F25B76A00487D23 /* IMG.png */,
 				202E85601F25B82800487D23 /* tessdata */,
 				203C6D881F25B564001CC317 /* Main.storyboard */,
@@ -159,6 +162,7 @@
 				203C6D8F1F25B564001CC317 /* LaunchScreen.storyboard in Resources */,
 				203C6D8C1F25B564001CC317 /* Assets.xcassets in Resources */,
 				202E85611F25B82800487D23 /* tessdata in Resources */,
+				202E85631F25E7E700487D23 /* PanCard.png in Resources */,
 				203C6D8A1F25B564001CC317 /* Main.storyboard in Resources */,
 				202E855F1F25B76A00487D23 /* IMG.png in Resources */,
 			);
