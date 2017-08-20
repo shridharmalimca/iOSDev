@@ -20,17 +20,17 @@ class ViewController: UIViewController,G8TesseractDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        imgView.image = UIImage(named: "IMG.png") //(named: "PanCard.png")//
+        imgView.image = UIImage(named: "EmirateId.png") //(named: "PanCard.png")//
         scanCard()
     }
     
     
     func scanCard() {
-        let tesseract = G8Tesseract(language: "eng+fra")// "eng+fra")
+        let tesseract = G8Tesseract(language: "eng+fra+ara")// "eng+fra")
         tesseract?.engineMode = .tesseractCubeCombined
         tesseract?.pageSegmentationMode = .auto
         tesseract?.maximumRecognitionTime = 60.0
-        tesseract?.image = UIImage(named: "IMG.png")?.g8_blackAndWhite()
+        tesseract?.image = UIImage(named: "EmirateId.png")?.g8_blackAndWhite()
         // tesseract?.image = image.g8_blackAndWhite()
         tesseract?.recognize()
         let recongnizedText = tesseract?.recognizedText
