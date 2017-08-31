@@ -15,7 +15,8 @@
 		203C6D8A1F25B564001CC317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203C6D881F25B564001CC317 /* Main.storyboard */; };
 		203C6D8C1F25B564001CC317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 203C6D8B1F25B564001CC317 /* Assets.xcassets */; };
 		203C6D8F1F25B564001CC317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203C6D8D1F25B564001CC317 /* LaunchScreen.storyboard */; };
-		20B86C321F333B9E00888B2D /* EmirateId.png in Resources */ = {isa = PBXBuildFile; fileRef = 20B86C311F333B9E00888B2D /* EmirateId.png */; };
+		206600451F4EC8640024CC37 /* EmirateId.png in Resources */ = {isa = PBXBuildFile; fileRef = 206600441F4EC8640024CC37 /* EmirateId.png */; };
+		206600881F4ED2EC0024CC37 /* EmirateIdd.png in Resources */ = {isa = PBXBuildFile; fileRef = 206600871F4ED2EC0024CC37 /* EmirateIdd.png */; };
 		A5F37974851A0FD4041CA5DA /* Pods_OCRDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4802C01FB157AA4FCC52158F /* Pods_OCRDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +31,8 @@
 		203C6D8B1F25B564001CC317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		203C6D8E1F25B564001CC317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		203C6D901F25B564001CC317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20B86C311F333B9E00888B2D /* EmirateId.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EmirateId.png; sourceTree = "<group>"; };
+		206600441F4EC8640024CC37 /* EmirateId.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EmirateId.png; sourceTree = "<group>"; };
+		206600871F4ED2EC0024CC37 /* EmirateIdd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EmirateIdd.png; sourceTree = "<group>"; };
 		4802C01FB157AA4FCC52158F /* Pods_OCRDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCRDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD2B17BB69BFFEADE015C81 /* Pods-OCRDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCRDemo/Pods-OCRDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CAEDFA0A0D697A65CB472992 /* Pods-OCRDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCRDemo/Pods-OCRDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,7 +75,8 @@
 				203C6D861F25B564001CC317 /* ViewController.swift */,
 				202E85621F25E7E700487D23 /* PanCard.png */,
 				202E855E1F25B76A00487D23 /* IMG.png */,
-				20B86C311F333B9E00888B2D /* EmirateId.png */,
+				206600441F4EC8640024CC37 /* EmirateId.png */,
+				206600871F4ED2EC0024CC37 /* EmirateIdd.png */,
 				202E85601F25B82800487D23 /* tessdata */,
 				203C6D881F25B564001CC317 /* Main.storyboard */,
 				203C6D8B1F25B564001CC317 /* Assets.xcassets */,
@@ -163,7 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				203C6D8F1F25B564001CC317 /* LaunchScreen.storyboard in Resources */,
-				20B86C321F333B9E00888B2D /* EmirateId.png in Resources */,
+				206600881F4ED2EC0024CC37 /* EmirateIdd.png in Resources */,
+				206600451F4EC8640024CC37 /* EmirateId.png in Resources */,
 				203C6D8C1F25B564001CC317 /* Assets.xcassets in Resources */,
 				202E85611F25B82800487D23 /* tessdata in Resources */,
 				202E85631F25E7E700487D23 /* PanCard.png in Resources */,
