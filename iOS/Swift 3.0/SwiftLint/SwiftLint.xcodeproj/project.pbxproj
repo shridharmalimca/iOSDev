@@ -12,6 +12,7 @@
 		20B8D9971F69509A00863C8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B8D9951F69509A00863C8D /* Main.storyboard */; };
 		20B8D9991F69509A00863C8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20B8D9981F69509A00863C8D /* Assets.xcassets */; };
 		20B8D99C1F69509A00863C8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B8D99A1F69509A00863C8D /* LaunchScreen.storyboard */; };
+		E2BF57296D2A01D797CBE2E8 /* Pods_SwiftLint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538F077EA7E11E72A52FF008 /* Pods_SwiftLint.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		20B8D9981F69509A00863C8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20B8D99B1F69509A00863C8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20B8D99D1F69509A00863C8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		538F077EA7E11E72A52FF008 /* Pods_SwiftLint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87CECF62F58C5B3BC2A34A05 /* Pods-SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLint.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLint/Pods-SwiftLint.release.xcconfig"; sourceTree = "<group>"; };
+		CD25EF25B79FD096E6EEBE20 /* Pods-SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLint/Pods-SwiftLint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2BF57296D2A01D797CBE2E8 /* Pods_SwiftLint.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				20B8D9901F69509A00863C8D /* SwiftLint */,
 				20B8D98F1F69509A00863C8D /* Products */,
+				57B0C1DE0410EC8A7A2DB138 /* Pods */,
+				A91D87B3DFEB915D72D0C692 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
+		57B0C1DE0410EC8A7A2DB138 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD25EF25B79FD096E6EEBE20 /* Pods-SwiftLint.debug.xcconfig */,
+				87CECF62F58C5B3BC2A34A05 /* Pods-SwiftLint.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A91D87B3DFEB915D72D0C692 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				538F077EA7E11E72A52FF008 /* Pods_SwiftLint.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20B8D9A01F69509A00863C8D /* Build configuration list for PBXNativeTarget "SwiftLint" */;
 			buildPhases = (
+				97BD9A430490580D4D5ED55A /* [CP] Check Pods Manifest.lock */,
 				20B8D98A1F69509A00863C8D /* Sources */,
 				20B8D98B1F69509A00863C8D /* Frameworks */,
 				20B8D98C1F69509A00863C8D /* Resources */,
+				6F7FE5EFB38C36700128132F /* [CP] Embed Pods Frameworks */,
+				CA4D7E774D7542E819B65647 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F7FE5EFB38C36700128132F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLint/Pods-SwiftLint-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97BD9A430490580D4D5ED55A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CA4D7E774D7542E819B65647 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLint/Pods-SwiftLint-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		20B8D98A1F69509A00863C8D /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		20B8D9A11F69509A00863C8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD25EF25B79FD096E6EEBE20 /* Pods-SwiftLint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftLint/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		20B8D9A21F69509A00863C8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87CECF62F58C5B3BC2A34A05 /* Pods-SwiftLint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftLint/Info.plist;
