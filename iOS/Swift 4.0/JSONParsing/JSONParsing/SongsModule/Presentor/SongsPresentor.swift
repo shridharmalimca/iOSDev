@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol SongsPresentorInputDelegate {
+protocol SongsPresentorInputDelegate: class {
     func showSongs(data: Any)
 }
 
 class SongsPresentor: NSObject {
-    var presentorDelegate: SongsPresentorInputDelegate?
+    weak var presentorDelegate: SongsPresentorInputDelegate?
 }
 
 extension SongsPresentor: SongsPresentorInputDelegate {

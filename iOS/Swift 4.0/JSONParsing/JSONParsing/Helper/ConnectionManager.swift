@@ -7,13 +7,13 @@
 //
 
 import Foundation
-protocol ConnectionManagerDelegate {
+protocol ConnectionManagerDelegate: class {
     func didReceiveData(response: Any)
 }
 
 struct RequestManager {
     let serverBaseUrl = URL(string: "https://rss.itunes.apple.com/api/v1/us/apple-music/hot-tracks/all/50/explicit.json")
-    let connectionManagerDelegate: ConnectionManagerDelegate!
+    var connectionManagerDelegate: ConnectionManagerDelegate!
     func requestSongs() {
         let urlRequest = URLRequest(url: serverBaseUrl!)
         let session = URLSession.shared

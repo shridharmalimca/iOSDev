@@ -16,6 +16,8 @@
 		20399C581FF3B7F60007E786 /* SongsPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20399C571FF3B7F60007E786 /* SongsPresentor.swift */; };
 		20399C5A1FF3C76F0007E786 /* SongsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20399C591FF3C76F0007E786 /* SongsEntity.swift */; };
 		20399C7C1FF4BCE60007E786 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20399C7B1FF4BCE60007E786 /* ConnectionManager.swift */; };
+		20399CA41FF4FB260007E786 /* SongsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20399CA31FF4FB260007E786 /* SongsRouter.swift */; };
+		20399CA61FF4FCCB0007E786 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20399CA51FF4FCCB0007E786 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		20399C571FF3B7F60007E786 /* SongsPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsPresentor.swift; sourceTree = "<group>"; };
 		20399C591FF3C76F0007E786 /* SongsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsEntity.swift; sourceTree = "<group>"; };
 		20399C7B1FF4BCE60007E786 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		20399CA31FF4FB260007E786 /* SongsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsRouter.swift; sourceTree = "<group>"; };
+		20399CA51FF4FCCB0007E786 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,13 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				20399C431FF3B7000007E786 /* AppDelegate.swift */,
-				20399C7D1FF4BE660007E786 /* View */,
-				20399C7E1FF4BE760007E786 /* Interactor */,
-				20399C7F1FF4BE830007E786 /* Presentor */,
-				20399C821FF4BEB20007E786 /* Entities */,
+				20399CA91FF506780007E786 /* SongsModule */,
 				20399C4F1FF3B7000007E786 /* Info.plist */,
 				20399C801FF4BE990007E786 /* Resources */,
 				20399C811FF4BEA80007E786 /* Helper */,
+				20399CA81FF506540007E786 /* SongsDetailsViewController */,
 			);
 			path = JSONParsing;
 			sourceTree = "<group>";
@@ -122,6 +124,34 @@
 				20399C591FF3C76F0007E786 /* SongsEntity.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		20399CA71FF5063B0007E786 /* SongsRouter */ = {
+			isa = PBXGroup;
+			children = (
+				20399CA31FF4FB260007E786 /* SongsRouter.swift */,
+			);
+			path = SongsRouter;
+			sourceTree = "<group>";
+		};
+		20399CA81FF506540007E786 /* SongsDetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				20399CA51FF4FCCB0007E786 /* DetailViewController.swift */,
+			);
+			path = SongsDetailsViewController;
+			sourceTree = "<group>";
+		};
+		20399CA91FF506780007E786 /* SongsModule */ = {
+			isa = PBXGroup;
+			children = (
+				20399C7D1FF4BE660007E786 /* View */,
+				20399C7E1FF4BE760007E786 /* Interactor */,
+				20399C7F1FF4BE830007E786 /* Presentor */,
+				20399CA71FF5063B0007E786 /* SongsRouter */,
+				20399C821FF4BEB20007E786 /* Entities */,
+			);
+			path = SongsModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,10 +228,12 @@
 			files = (
 				20399C5A1FF3C76F0007E786 /* SongsEntity.swift in Sources */,
 				20399C7C1FF4BCE60007E786 /* ConnectionManager.swift in Sources */,
+				20399CA41FF4FB260007E786 /* SongsRouter.swift in Sources */,
 				20399C561FF3B7E40007E786 /* SongsInteractor.swift in Sources */,
 				20399C461FF3B7000007E786 /* SongsViewController.swift in Sources */,
 				20399C441FF3B7000007E786 /* AppDelegate.swift in Sources */,
 				20399C581FF3B7F60007E786 /* SongsPresentor.swift in Sources */,
+				20399CA61FF4FCCB0007E786 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

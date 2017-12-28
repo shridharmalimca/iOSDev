@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol SongsInteractorInputDelegate {
+protocol SongsInteractorInputDelegate: class {
     func getItunesSongs()
 }
 
 class SongsInteractor: NSObject {
-    var delegate: SongsInteractorInputDelegate?
+    weak var delegate: SongsInteractorInputDelegate?
 }
 extension SongsInteractor: SongsInteractorInputDelegate {
     func getItunesSongs() {
