@@ -225,7 +225,7 @@ public class AddAppointment extends AppCompatActivity {
         @Override
         protected Object doInBackground(Object[] params) {
             RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
-            String url = "http://technonnovations.in/api/PatientNotifications";
+            String url = "http://drishtitechnologies.in/api/PatientNotifications";
 
             Map<String, String> jsonParams = new HashMap<String, String>();
             jsonParams.put("NotificationId", "0");
