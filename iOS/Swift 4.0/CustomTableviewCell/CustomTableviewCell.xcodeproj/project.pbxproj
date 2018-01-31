@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20299EB5201DB7F800AC53CD /* RegistrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20299EB4201DB7F800AC53CD /* RegistrationModel.swift */; };
 		20399D61201C92920007E786 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20399D60201C92920007E786 /* AppDelegate.swift */; };
 		20399D63201C92920007E786 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20399D62201C92920007E786 /* ViewController.swift */; };
 		20399D66201C92920007E786 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20399D64201C92920007E786 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20299EB4201DB7F800AC53CD /* RegistrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModel.swift; sourceTree = "<group>"; };
 		20399D5D201C92920007E786 /* CustomTableviewCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTableviewCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20399D60201C92920007E786 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20399D62201C92920007E786 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				20399D69201C92920007E786 /* LaunchScreen.storyboard */,
 				20399D6C201C92920007E786 /* Info.plist */,
 				20399D72201C933B0007E786 /* CustomTableViewCell.swift */,
+				20299EB4201DB7F800AC53CD /* RegistrationModel.swift */,
 			);
 			path = CustomTableviewCell;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			files = (
 				20399D73201C933B0007E786 /* CustomTableViewCell.swift in Sources */,
 				20399D63201C92920007E786 /* ViewController.swift in Sources */,
+				20299EB5201DB7F800AC53CD /* RegistrationModel.swift in Sources */,
 				20399D61201C92920007E786 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
