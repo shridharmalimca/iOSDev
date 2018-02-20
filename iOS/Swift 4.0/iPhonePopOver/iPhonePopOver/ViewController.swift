@@ -29,10 +29,12 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
                 let popover = popOverVC.popoverPresentationController!
                 popover.delegate = self
                 popover.permittedArrowDirections = .up
-                
+                popover.backgroundColor = UIColor.lightGray
+                let cell = tblView.cellForRow(at: indexpath) as? PopOverTableViewCell
                 let rectOfCell = tblView.rectForRow(at: indexpath)
                 let cellRectConvertAsPerViewController = tblView.convert(rectOfCell, to: self.view)
-                popover.sourceRect = cellRectConvertAsPerViewController
+                popover.sourceView = cell?.popOverBtn
+                popover.sourceRect = (popover.sourceView?.bounds)!
             }
             
         } else {

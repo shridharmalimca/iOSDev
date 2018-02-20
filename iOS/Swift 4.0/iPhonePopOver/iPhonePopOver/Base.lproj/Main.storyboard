@@ -42,9 +42,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mfk-HN-S7I">
-                                                    <rect key="frame" x="101" y="15" width="145" height="30"/>
+                                                    <rect key="frame" x="324" y="11" width="30" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="PopOver In Table"/>
+                                                    <state key="normal" title="pop"/>
                                                     <connections>
                                                         <action selector="popOverBtnClicked:" destination="X7W-bB-3i6" eventType="touchUpInside" id="sGy-CV-9qj"/>
                                                     </connections>
